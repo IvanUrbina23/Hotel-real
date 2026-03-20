@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Real - Lujo y Confort en Santiago Papasquiaro</title>
+    <meta name="description" content="Hotel Real - Experiencia de lujo y confort en Santiago Papasquiaro, Durango, M&eacute;xico">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="container">
+            <div class="header-content">
+                <!-- Logo -->
+                <div class="logo">
+                    <h1 onclick="scrollToSection('hero')">Hotel <span class="gold">Real</span></h1>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <nav class="nav-desktop">
+                    <a href="#hero" onclick="scrollToSection('hero')">Inicio</a>
+                    <a href="#habitaciones" onclick="scrollToSection('habitaciones')">Habitaciones</a>
+                    <a href="#restaurante" onclick="scrollToSection('restaurante')">Restaurante</a>
+                    <a href="#gimnasio" onclick="scrollToSection('gimnasio')">Gimnasio</a>
+                    <a href="#reservar" onclick="scrollToSection('reservar')">Reservar</a>
+                    <a href="#contacto" onclick="scrollToSection('contacto')">Contacto</a>
+                </nav>
+
+                <!-- CTA Button Desktop -->
+                <button class="btn-primary cta-desktop" onclick="scrollToSection('reservar')">
+                    Reservar ahora
+                </button>
+
+                <!-- Mobile Menu Button -->
+                <button class="menu-toggle" id="menuToggle" onclick="toggleMobileMenu()">
+                    <span class="menu-icon">&#9776;</span>
+                    <span class="close-icon" style="display: none;">&#10005;</span>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Navigation -->
+        <div class="nav-mobile" id="mobileMenu">
+            <a href="#hero" onclick="scrollToSection('hero')">Inicio</a>
+            <a href="#habitaciones" onclick="scrollToSection('habitaciones')">Habitaciones</a>
+            <a href="#restaurante" onclick="scrollToSection('restaurante')">Restaurante</a>
+            <a href="#gimnasio" onclick="scrollToSection('gimnasio')">Gimnasio</a>
+            <a href="#reservar" onclick="scrollToSection('reservar')">Reservar</a>
+            <a href="#contacto" onclick="scrollToSection('contacto')">Contacto</a>
+            <button class="btn-primary btn-mobile" onclick="scrollToSection('reservar')">
+                Reservar ahora
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-image">
+            <img src="images/imagen principal.png" alt="Hotel Real Exterior">
+            <div class="hero-overlay"></div>
+        </div>
+        <div class="hero-content">
+            <h1 class="hero-title">
+                Vive una experiencia <span class="gold">real</span> de lujo y confort
+            </h1>
+            <p class="hero-subtitle">
+                En el coraz&oacute;n de Santiago Papasquiaro, Durango. Un refugio de elegancia y exclusividad.
+            </p>
+            <div class="hero-buttons">
+                <button class="btn-primary" onclick="scrollToSection('reservar')">
+                    Reservar habitaci&oacute;n
+                </button>
+                <button class="btn-secondary" onclick="scrollToSection('habitaciones')">
+                    Explorar habitaciones
+                </button>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+            </svg>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-text">
+                    <h2>Bienvenido a <span class="gold">Hotel Real</span></h2>
+                    <p class="about-paragraph">
+                        Hotel Real es el destino premium en Santiago Papasquiaro, Durango. Ofrecemos una experiencia &uacute;nica que combina elegancia atemporal con servicios de clase mundial.
+                    </p>
+                    <p class="about-paragraph">
+                        Cada detalle ha sido cuidadosamente dise&ntilde;ado para proporcionar el m&aacute;ximo confort y lujo a nuestros hu&eacute;spedes m&aacute;s exigentes.
+                    </p>
+                </div>
+                <div class="amenities-grid">
+                    <div class="amenity-card">
+                        <div class="amenity-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M5 12.55a11 11 0 0 1 14.08 0"></path>
+                                <path d="M1.42 9a16 16 0 0 1 21.16 0"></path>
+                                <path d="M8.53 16.11a6 6 0 0 1 6.95 0"></path>
+                                <line x1="12" y1="20" x2="12.01" y2="20"></line>
+                            </svg>
+                        </div>
+                        <h3>WiFi de alta velocidad</h3>
+                        <p>Conexi&oacute;n de fibra &oacute;ptica en todas las instalaciones</p>
+                    </div>
+                    <div class="amenity-card">
+                        <div class="amenity-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                            </svg>
+                        </div>
+                        <h3>Seguridad 24/7</h3>
+                        <p>Vigilancia profesional las 24 horas del d&iacute;a</p>
+                    </div>
+                    <div class="amenity-card">
+                        <div class="amenity-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M18 8h1a4 4 0 0 1 0 8h-1M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"></path>
+                                <circle cx="7" cy="13" r=".5"></circle>
+                                <circle cx="12" cy="13" r=".5"></circle>
+                            </svg>
+                        </div>
+                        <h3>Estacionamiento</h3>
+                        <p>Amplio estacionamiento privado y seguro</p>
+                    </div>
+                    <div class="amenity-card">
+                        <div class="amenity-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M18 8h1a4 4 0 0 1 0 8h-1M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8zM6 1v4M10 1v4M14 1v4"></path>
+                            </svg>
+                        </div>
+                        <h3>Servicio a la habitaci&oacute;n</h3>
+                        <p>Disponible en todo momento para tu comodidad</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rooms Section -->
+    <section class="rooms" id="habitaciones">
+        <div class="container">
+            <div class="section-header">
+                <h2>Nuestras <span class="gold">Habitaciones</span></h2>
+                <p>Cada habitaci&oacute;n est&aacute; dise&ntilde;ada para ofrecerte el m&aacute;ximo confort y lujo durante tu estancia</p>
+            </div>
+
+            <div class="rooms-grid">
+                <!-- Habitaci&oacute;n Sencilla -->
+                <div class="room-card">
+                    <div class="room-image">
+                        <img src="images/Habitacion sencilla.png" alt="Habitaci&oacute;n Sencilla">
+                    </div>
+                    <div class="room-content">
+                        <h3>Habitaci&oacute;n Sencilla</h3>
+                        <p class="room-description">Una opci&oacute;n c&oacute;moda y funcional para descansar con todo lo esencial.</p>
+                        <ul class="room-features">
+                            <li>&#10003; Cama confortable</li>
+                            <li>&#10003; Ba&ntilde;o privado</li>
+                            <li>&#10003; Televisi&oacute;n por cable</li>
+                            <li>&#10003; Aire acondicionado</li>
+                            <li>&#10003; Wifi</li>
+                        </ul>
+                        <div class="room-footer">
+                            <div class="room-price">
+                                <span class="price">$1,200</span>
+                                <span class="period">por noche</span>
+                            </div>
+                            <button class="btn-dark" onclick="scrollToSection('reservar')">Reservar</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Habitaci&oacute;n Doble -->
+                <div class="room-card highlighted">
+                    <div class="room-image">
+                        <img src="images/habitacion doble.png" alt="Habitaci&oacute;n Doble">
+                        <div class="room-badge">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="white">
+                                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                            </svg>
+                            Mejor relaci&oacute;n calidad-precio
+                        </div>
+                    </div>
+                    <div class="room-content">
+                        <h3>Habitaci&oacute;n Doble</h3>
+                        <p class="room-description">Ideal para compartir una estancia c&oacute;moda con mayor amplitud.</p>
+                        <ul class="room-features">
+                            <li>&#10003; Dos camas</li>
+                            <li>&#10003; Televisi&oacute;n por cable</li>
+                            <li>&#10003; Aire acondicionado</li>
+                            <li>&#10003; Ba&ntilde;o privado</li>
+                            <li>&#10003; Espacio amplio</li>
+                            <li>&#10003; Wifi</li>
+                        </ul>
+                        <div class="room-footer">
+                            <div class="room-price">
+                                <span class="price">$1,800</span>
+                                <span class="period">por noche</span>
+                            </div>
+                            <button class="btn-dark" onclick="scrollToSection('reservar')">Reservar</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Habitaci&oacute;n Premium -->
+                <div class="room-card">
+                    <div class="room-image">
+                        <img src="images/habitacion premiun.jpg" alt="Habitaci&oacute;n Premium">
+                        <div class="room-badge">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="white">
+                                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                            </svg>
+                            M&aacute;s exclusiva
+                        </div>
+                    </div>
+                    <div class="room-content">
+                        <h3>Habitaci&oacute;n Premium</h3>
+                        <p class="room-description">Una habitaci&oacute;n amplia y c&oacute;moda para descansar con mayor confort.</p>
+                        <ul class="room-features">
+                            <li>&#10003; Cama amplia</li>
+                            <li>&#10003; Televisi&oacute;n por cable</li>
+                            <li>&#10003; Aire acondicionado</li>
+                            <li>&#10003; Ba&ntilde;o privado</li>
+                            <li>&#10003; Espacio confortable</li>
+                            <li>&#10003; Wifi</li>
+                        </ul>
+                        <div class="room-footer">
+                            <div class="room-price">
+                                <span class="price">$2,800</span>
+                                <span class="period">por noche</span>
+                            </div>
+                            <button class="btn-gold" onclick="scrollToSection('reservar')">Reservar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Restaurant Section -->
+    <section class="restaurant" id="restaurante">
+        <div class="container">
+            <div class="two-column">
+                <div class="column-image">
+                    <img src="https://images.unsplash.com/photo-1768697358705-c1b60333da35?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxlbGVnYW50JTIwaG90ZWwlMjByZXN0YXVyYW50JTIwZGluaW5nfGVufDF8fHx8MTc3MjMwMTg2Mnww&ixlib=rb-4.1.0&q=80&w=1080" alt="Restaurante Hotel Real">
+                </div>
+                <div class="column-content">
+                    <h2>Experiencia <span class="gold">Gastron&oacute;mica</span></h2>
+                    <p>
+                        Nuestro restaurante ofrece un ambiente familiar y opciones para todos los gustos, ideal para disfrutar una comida rica y sin complicaciones.
+                    </p>
+                    <p>
+                        Entre nuestras especialidades encontrar&aacute;s pizzas, hamburguesas y otros platillos muy conocidos en M&eacute;xico, preparados al momento.
+                    </p>
+                    <div class="features-list">
+                        <div class="feature-item">
+                            <div class="feature-icon">&#128298;</div>
+                            <span>Pizzas reci&eacute;n preparadas</span>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">&#127869;&#65039;</div>
+                            <span>Hamburguesas, papas y snacks</span>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">&#127863;</div>
+                            <span>Bebidas, antojitos y opciones para toda la familia</span>
+                        </div>
+                    </div>
+                    <button class="btn-primary">Ver men&uacute;</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gym Section -->
+    <section class="gym" id="gimnasio">
+        <div class="container">
+            <div class="two-column reverse">
+                <div class="column-content">
+                    <h2>Centro de <span class="gold">Fitness</span></h2>
+                    <p>
+                        Mant&eacute;n tu rutina de ejercicio en nuestro gimnasio de &uacute;ltima generaci&oacute;n, equipado con la mejor tecnolog&iacute;a y maquinaria profesional.
+                    </p>
+                    <p>
+                        Abierto 24/7 para tu conveniencia, con entrenadores personales disponibles para ayudarte a alcanzar tus objetivos.
+                    </p>
+                    <div class="features-list">
+                        <div class="feature-item">
+                            <div class="feature-icon">&#128170;</div>
+                            <span>Equipamiento profesional de peso libre</span>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">&#10084;&#65039;</div>
+                            <span>Zona de cardio con equipos de &uacute;ltima generaci&oacute;n</span>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">&#9889;</div>
+                            <span>&Aacute;rea de entrenamiento funcional y stretching</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="column-image">
+                    <img src="https://images.unsplash.com/photo-1669807164466-10a6584a067e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjBob3RlbCUyMGd5bSUyMGZpdG5lc3N8ZW58MXx8fHwxNzcyMzAxODYzfDA&ixlib=rb-4.1.0&q=80&w=1080" alt="Gimnasio Hotel Real">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reservation Section -->
+    <section class="reservation" id="reservar">
+        <div class="container-small">
+            <div class="section-header">
+                <h2>Reserva tu <span class="gold">Estancia</span></h2>
+                <p>Completa el formulario y nos pondremos en contacto contigo para confirmar tu reservaci&oacute;n</p>
+            </div>
+
+            <div class="reservation-card">
+                <form id="reservationForm" onsubmit="handleWhatsAppReservation(event)">
+                    <div class="form-group">
+                        <label for="nombre">Nombre completo</label>
+                        <input type="text" id="nombre" name="nombre" placeholder="Ingresa tu nombre completo" required>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="entrada">Fecha de entrada</label>
+                            <input type="date" id="entrada" name="entrada" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="salida">Fecha de salida</label>
+                            <input type="date" id="salida" name="salida" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="tipoHabitacion">Tipo de habitaci&oacute;n</label>
+                        <select id="tipoHabitacion" name="tipoHabitacion" required>
+                            <option value="">Selecciona una habitaci&oacute;n</option>
+                            <option value="basica">Habitaci&oacute;n Sencilla - $1,200/noche</option>
+                            <option value="intermedia">Habitaci&oacute;n Doble - $1,800/noche</option>
+                            <option value="premium">Habitaci&oacute;n Premium - $2,800/noche</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="huespedes">N&uacute;mero de hu&eacute;spedes</label>
+                        <input type="number" id="huespedes" name="huespedes" min="1" max="6" value="1" required>
+                    </div>
+
+                    <button type="submit" class="btn-primary btn-submit">Confirmar reserva</button>
+                </form>
+
+                <p class="trust-message">&#128274; Tus datos est&aacute;n seguros con nosotros</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" id="contacto">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <h3 class="footer-logo">Hotel <span class="gold">Real</span></h3>
+                    <p>Experiencia de lujo y confort en el coraz&oacute;n de Santiago Papasquiaro.</p>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Contacto</h4>
+                    <div class="contact-info">
+                        <p>&#128205; Av. Principal 123<br>Santiago Papasquiaro<br>Durango, M&eacute;xico</p>
+                        <p>&#128222; <a href="tel:+526741234567">+52 (674) 123-4567</a></p>
+                        <p>&#9993;&#65039; <a href="mailto:info@hotelreal.com">info@hotelreal.com</a></p>
+                    </div>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Enlaces r&aacute;pidos</h4>
+                    <div class="footer-links">
+                        <a href="#habitaciones">Habitaciones</a>
+                        <a href="#restaurante">Restaurante</a>
+                        <a href="#gimnasio">Gimnasio</a>
+                        <a href="#reservar">Reservar</a>
+                    </div>
+                </div>
+
+                <div class="footer-column">
+                    <h4>S&iacute;guenos</h4>
+                    <div class="social-links">
+                        <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                            </svg>
+                        </a>
+                        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                            </svg>
+                        </a>
+                        <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Hotel Real. Todos los derechos reservados.</p>
+                <div class="footer-legal">
+                    <a href="#">Aviso de privacidad</a>
+                    <a href="#">T&eacute;rminos y condiciones</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+

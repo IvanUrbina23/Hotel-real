@@ -1,0 +1,1085 @@
+/* Linea 1: comentario CSS que describe la seccion de estilos. */
+/* ============================================
+   VARIABLES Y RESET  /* Linea 2: define o ajusta una regla de estilo para controlar la presentacion visual. */
+   /*============================================ */  /* Linea 3: define o ajusta una regla de estilo para controlar la presentacion visual. */
+/* Linea 4: separador visual para ordenar secciones de estilos. */
+
+:root {  /* Linea 5: abre el bloque de estilos del selector ':root'. */
+    --hotel-black: #111111;  /* Linea 6: asigna la propiedad '--hotel-black' con el valor '#111111' en el estilo actual. */
+    --hotel-white: #FFFFFF;  /* Linea 7: asigna la propiedad '--hotel-white' con el valor '#FFFFFF' en el estilo actual. */
+    --hotel-gold: #C6A75E;  /* Linea 8: asigna la propiedad '--hotel-gold' con el valor '#C6A75E' en el estilo actual. */
+    --hotel-beige: #F5F1E8;  /* Linea 9: asigna la propiedad '--hotel-beige' con el valor '#F5F1E8' en el estilo actual. */
+    --hotel-gray: #F8F8F8;  /* Linea 10: asigna la propiedad '--hotel-gray' con el valor '#F8F8F8' en el estilo actual. */
+/* Linea 11: separador visual para ordenar secciones de estilos. */
+    
+    --font-heading: 'Playfair Display', serif;  /* Linea 12: asigna la propiedad '--font-heading' con el valor ''Playfair Display', serif' en el estilo actual. */
+    --font-body: 'Inter', sans-serif;  /* Linea 13: asigna la propiedad '--font-body' con el valor ''Inter', sans-serif' en el estilo actual. */
+}  /* Linea 14: cierra el bloque de reglas CSS actual. */
+/* Linea 15: separador visual para ordenar secciones de estilos. */
+
+* {  /* Linea 16: comentario CSS que describe la seccion de estilos. */
+    margin: 0;  /* Linea 17: asigna la propiedad 'margin' con el valor '0' en el estilo actual. */
+    padding: 0;  /* Linea 18: asigna la propiedad 'padding' con el valor '0' en el estilo actual. */
+    box-sizing: border-box;  /* Linea 19: asigna la propiedad 'box-sizing' con el valor 'border-box' en el estilo actual. */
+}  /* Linea 20: cierra el bloque de reglas CSS actual. */
+/* Linea 21: separador visual para ordenar secciones de estilos. */
+
+html {  /* Linea 22: abre el bloque de estilos del selector 'html'. */
+    scroll-behavior: smooth;  /* Linea 23: asigna la propiedad 'scroll-behavior' con el valor 'smooth' en el estilo actual. */
+}  /* Linea 24: cierra el bloque de reglas CSS actual. */
+/* Linea 25: separador visual para ordenar secciones de estilos. */
+
+body {  /* Linea 26: abre el bloque de estilos del selector 'body'. */
+    font-family: var(--font-body);  /* Linea 27: asigna la propiedad 'font-family' con el valor 'var(--font-body)' en el estilo actual. */
+    color: var(--hotel-black);  /* Linea 28: asigna la propiedad 'color' con el valor 'var(--hotel-black)' en el estilo actual. */
+    line-height: 1.6;  /* Linea 29: asigna la propiedad 'line-height' con el valor '1.6' en el estilo actual. */
+    overflow-x: hidden;  /* Linea 30: asigna la propiedad 'overflow-x' con el valor 'hidden' en el estilo actual. */
+}  /* Linea 31: cierra el bloque de reglas CSS actual. */
+/* Linea 32: separador visual para ordenar secciones de estilos. */
+
+img {  /* Linea 33: abre el bloque de estilos del selector 'img'. */
+    max-width: 100%;  /* Linea 34: asigna la propiedad 'max-width' con el valor '100%' en el estilo actual. */
+    display: block;  /* Linea 35: asigna la propiedad 'display' con el valor 'block' en el estilo actual. */
+}  /* Linea 36: cierra el bloque de reglas CSS actual. */
+/* Linea 37: separador visual para ordenar secciones de estilos. */
+
+a {  /* Linea 38: abre el bloque de estilos del selector 'a'. */
+    text-decoration: none;  /* Linea 39: asigna la propiedad 'text-decoration' con el valor 'none' en el estilo actual. */
+    color: inherit;  /* Linea 40: asigna la propiedad 'color' con el valor 'inherit' en el estilo actual. */
+}  /* Linea 41: cierra el bloque de reglas CSS actual. */
+/* Linea 42: separador visual para ordenar secciones de estilos. */
+
+button {  /* Linea 43: abre el bloque de estilos del selector 'button'. */
+    cursor: pointer;  /* Linea 44: asigna la propiedad 'cursor' con el valor 'pointer' en el estilo actual. */
+    border: none;  /* Linea 45: asigna la propiedad 'border' con el valor 'none' en el estilo actual. */
+    font-family: var(--font-body);  /* Linea 46: asigna la propiedad 'font-family' con el valor 'var(--font-body)' en el estilo actual. */
+}  /* Linea 47: cierra el bloque de reglas CSS actual. */
+/* Linea 48: separador visual para ordenar secciones de estilos. */
+
+/* Linea 49: comentario CSS que describe la seccion de estilos. */
+/* ============================================
+   UTILIDADES  /* Linea 50: define o ajusta una regla de estilo para controlar la presentacion visual. */
+  /* Linea 51: define o ajusta una regla de estilo para controlar la presentacion visual. */
+/* Linea 52: separador visual para ordenar secciones de estilos. */
+
+.container {  /* Linea 53: abre el bloque de estilos del selector '.container'. */
+    max-width: 1280px;  /* Linea 54: asigna la propiedad 'max-width' con el valor '1280px' en el estilo actual. */
+    margin: 0 auto;  /* Linea 55: asigna la propiedad 'margin' con el valor '0 auto' en el estilo actual. */
+    padding: 0 1rem;  /* Linea 56: asigna la propiedad 'padding' con el valor '0 1rem' en el estilo actual. */
+}  /* Linea 57: cierra el bloque de reglas CSS actual. */
+/* Linea 58: separador visual para ordenar secciones de estilos. */
+
+.container-small {  /* Linea 59: abre el bloque de estilos del selector '.container-small'. */
+    max-width: 1024px;  /* Linea 60: asigna la propiedad 'max-width' con el valor '1024px' en el estilo actual. */
+    margin: 0 auto;  /* Linea 61: asigna la propiedad 'margin' con el valor '0 auto' en el estilo actual. */
+    padding: 0 1rem;  /* Linea 62: asigna la propiedad 'padding' con el valor '0 1rem' en el estilo actual. */
+}  /* Linea 63: cierra el bloque de reglas CSS actual. */
+/* Linea 64: separador visual para ordenar secciones de estilos. */
+
+.gold {  /* Linea 65: abre el bloque de estilos del selector '.gold'. */
+    color: var(--hotel-gold);  /* Linea 66: asigna la propiedad 'color' con el valor 'var(--hotel-gold)' en el estilo actual. */
+}  /* Linea 67: cierra el bloque de reglas CSS actual. */
+/* Linea 68: separador visual para ordenar secciones de estilos. */
+
+/* Linea 69: comentario CSS que describe la seccion de estilos. */
+/* ============================================
+   BOTONES
+   ============================================ */
+/* Linea 72: separador visual para ordenar secciones de estilos. */
+
+.btn-primary {  /* Linea 73: abre el bloque de estilos del selector '.btn-primary'. */
+    background-color: var(--hotel-gold);  /* Linea 74: asigna la propiedad 'background-color' con el valor 'var(--hotel-gold)' en el estilo actual. */
+    color: var(--hotel-white);  /* Linea 75: asigna la propiedad 'color' con el valor 'var(--hotel-white)' en el estilo actual. */
+    padding: 0.875rem 2rem;  /* Linea 76: asigna la propiedad 'padding' con el valor '0.875rem 2rem' en el estilo actual. */
+    border-radius: 0.5rem;  /* Linea 77: asigna la propiedad 'border-radius' con el valor '0.5rem' en el estilo actual. */
+    font-weight: 500;  /* Linea 78: asigna la propiedad 'font-weight' con el valor '500' en el estilo actual. */
+    transition: all 0.3s ease;  /* Linea 79: asigna la propiedad 'transition' con el valor 'all 0.3s ease' en el estilo actual. */
+}  /* Linea 80: cierra el bloque de reglas CSS actual. */
+/* Linea 81: separador visual para ordenar secciones de estilos. */
+
+.btn-primary:hover {  /* Linea 82: abre el bloque de estilos del selector '.btn-primary:hover'. */
+    box-shadow: 0 10px 30px rgba(198, 167, 94, 0.4);  /* Linea 83: asigna la propiedad 'box-shadow' con el valor '0 10px 30px rgba(198, 167, 94, 0.4)' en el estilo actual. */
+    transform: translateY(-2px);  /* Linea 84: asigna la propiedad 'transform' con el valor 'translateY(-2px)' en el estilo actual. */
+}  /* Linea 85: cierra el bloque de reglas CSS actual. */
+/* Linea 86: separador visual para ordenar secciones de estilos. */
+
+.btn-secondary {  /* Linea 87: abre el bloque de estilos del selector '.btn-secondary'. */
+    background-color: transparent;  /* Linea 88: asigna la propiedad 'background-color' con el valor 'transparent' en el estilo actual. */
+    color: var(--hotel-white);  /* Linea 89: asigna la propiedad 'color' con el valor 'var(--hotel-white)' en el estilo actual. */
+    padding: 0.875rem 2rem;  /* Linea 90: asigna la propiedad 'padding' con el valor '0.875rem 2rem' en el estilo actual. */
+    border: 2px solid var(--hotel-white);  /* Linea 91: asigna la propiedad 'border' con el valor '2px solid var(--hotel-white)' en el estilo actual. */
+    border-radius: 0.5rem;  /* Linea 92: asigna la propiedad 'border-radius' con el valor '0.5rem' en el estilo actual. */
+    font-weight: 500;  /* Linea 93: asigna la propiedad 'font-weight' con el valor '500' en el estilo actual. */
+    transition: all 0.3s ease;  /* Linea 94: asigna la propiedad 'transition' con el valor 'all 0.3s ease' en el estilo actual. */
+}  /* Linea 95: cierra el bloque de reglas CSS actual. */
+/* Linea 96: separador visual para ordenar secciones de estilos. */
+
+.btn-secondary:hover {  /* Linea 97: abre el bloque de estilos del selector '.btn-secondary:hover'. */
+    background-color: var(--hotel-white);  /* Linea 98: asigna la propiedad 'background-color' con el valor 'var(--hotel-white)' en el estilo actual. */
+    color: var(--hotel-black);  /* Linea 99: asigna la propiedad 'color' con el valor 'var(--hotel-black)' en el estilo actual. */
+}  /* Linea 100: cierra el bloque de reglas CSS actual. */
+/* Linea 101: separador visual para ordenar secciones de estilos. */
+
+.btn-dark {  /* Linea 102: abre el bloque de estilos del selector '.btn-dark'. */
+    background-color: var(--hotel-black);  /* Linea 103: asigna la propiedad 'background-color' con el valor 'var(--hotel-black)' en el estilo actual. */
+    color: var(--hotel-white);  /* Linea 104: asigna la propiedad 'color' con el valor 'var(--hotel-white)' en el estilo actual. */
+    padding: 0.75rem 2rem;  /* Linea 105: asigna la propiedad 'padding' con el valor '0.75rem 2rem' en el estilo actual. */
+    border-radius: 0.5rem;  /* Linea 106: asigna la propiedad 'border-radius' con el valor '0.5rem' en el estilo actual. */
+    font-weight: 500;  /* Linea 107: asigna la propiedad 'font-weight' con el valor '500' en el estilo actual. */
+    width: 100%;  /* Linea 108: asigna la propiedad 'width' con el valor '100%' en el estilo actual. */
+    transition: all 0.3s ease;  /* Linea 109: asigna la propiedad 'transition' con el valor 'all 0.3s ease' en el estilo actual. */
+}  /* Linea 110: cierra el bloque de reglas CSS actual. */
+/* Linea 111: separador visual para ordenar secciones de estilos. */
+
+.btn-dark:hover {  /* Linea 112: abre el bloque de estilos del selector '.btn-dark:hover'. */
+    box-shadow: 0 8px 20px rgba(17, 17, 17, 0.3);  /* Linea 113: asigna la propiedad 'box-shadow' con el valor '0 8px 20px rgba(17, 17, 17, 0.3)' en el estilo actual. */
+}  /* Linea 114: cierra el bloque de reglas CSS actual. */
+/* Linea 115: separador visual para ordenar secciones de estilos. */
+
+.btn-gold {  /* Linea 116: abre el bloque de estilos del selector '.btn-gold'. */
+    background-color: var(--hotel-gold);  /* Linea 117: asigna la propiedad 'background-color' con el valor 'var(--hotel-gold)' en el estilo actual. */
+    color: var(--hotel-white);  /* Linea 118: asigna la propiedad 'color' con el valor 'var(--hotel-white)' en el estilo actual. */
+    padding: 0.75rem 2rem;  /* Linea 119: asigna la propiedad 'padding' con el valor '0.75rem 2rem' en el estilo actual. */
+    border-radius: 0.5rem;  /* Linea 120: asigna la propiedad 'border-radius' con el valor '0.5rem' en el estilo actual. */
+    font-weight: 500;  /* Linea 121: asigna la propiedad 'font-weight' con el valor '500' en el estilo actual. */
+    width: 100%;  /* Linea 122: asigna la propiedad 'width' con el valor '100%' en el estilo actual. */
+    transition: all 0.3s ease;  /* Linea 123: asigna la propiedad 'transition' con el valor 'all 0.3s ease' en el estilo actual. */
+}  /* Linea 124: cierra el bloque de reglas CSS actual. */
+/* Linea 125: separador visual para ordenar secciones de estilos. */
+
+.btn-gold:hover {  /* Linea 126: abre el bloque de estilos del selector '.btn-gold:hover'. */
+    box-shadow: 0 8px 20px rgba(198, 167, 94, 0.4);  /* Linea 127: asigna la propiedad 'box-shadow' con el valor '0 8px 20px rgba(198, 167, 94, 0.4)' en el estilo actual. */
+    transform: scale(1.05);  /* Linea 128: asigna la propiedad 'transform' con el valor 'scale(1.05)' en el estilo actual. */
+}  /* Linea 129: cierra el bloque de reglas CSS actual. */
+/* Linea 130: separador visual para ordenar secciones de estilos. */
+
+/* Linea 131: comentario CSS que describe la seccion de estilos. */
+/* ============================================
+   HEADER  /* Linea 132: define o ajusta una regla de estilo para controlar la presentacion visual. */
+/*   ============================================ */  /* Linea 133: define o ajusta una regla de estilo para controlar la presentacion visual. */
+/* Linea 134: separador visual para ordenar secciones de estilos. */
+
+.header {  /* Linea 135: abre el bloque de estilos del selector '.header'. */
+    position: fixed;  /* Linea 136: asigna la propiedad 'position' con el valor 'fixed' en el estilo actual. */
+    top: 0;  /* Linea 137: asigna la propiedad 'top' con el valor '0' en el estilo actual. */
+    left: 0;  /* Linea 138: asigna la propiedad 'left' con el valor '0' en el estilo actual. */
+    right: 0;  /* Linea 139: asigna la propiedad 'right' con el valor '0' en el estilo actual. */
+    background-color: rgba(255, 255, 255, 0.95);  /* Linea 140: asigna la propiedad 'background-color' con el valor 'rgba(255, 255, 255, 0.95)' en el estilo actual. */
+    backdrop-filter: blur(10px);  /* Linea 141: asigna la propiedad 'backdrop-filter' con el valor 'blur(10px)' en el estilo actual. */
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);  /* Linea 142: asigna la propiedad 'border-bottom' con el valor '1px solid rgba(0, 0, 0, 0.1)' en el estilo actual. */
+    z-index: 1000;  /* Linea 143: asigna la propiedad 'z-index' con el valor '1000' en el estilo actual. */
+}  /* Linea 144: cierra el bloque de reglas CSS actual. */
+/* Linea 145: separador visual para ordenar secciones de estilos. */
+
+.header-content {  /* Linea 146: abre el bloque de estilos del selector '.header-content'. */
+    display: flex;  /* Linea 147: asigna la propiedad 'display' con el valor 'flex' en el estilo actual. */
+    align-items: center;  /* Linea 148: asigna la propiedad 'align-items' con el valor 'center' en el estilo actual. */
+    justify-content: space-between;  /* Linea 149: asigna la propiedad 'justify-content' con el valor 'space-between' en el estilo actual. */
+    height: 5rem;  /* Linea 150: asigna la propiedad 'height' con el valor '5rem' en el estilo actual. */
+}  /* Linea 151: cierra el bloque de reglas CSS actual. */
+/* Linea 152: separador visual para ordenar secciones de estilos. */
+
+.logo h1 {  /* Linea 153: abre el bloque de estilos del selector '.logo h1'. */
+    font-family: var(--font-heading);  /* Linea 154: asigna la propiedad 'font-family' con el valor 'var(--font-heading)' en el estilo actual. */
+    font-size: 1.75rem;  /* Linea 155: asigna la propiedad 'font-size' con el valor '1.75rem' en el estilo actual. */
+    font-weight: 600;  /* Linea 156: asigna la propiedad 'font-weight' con el valor '600' en el estilo actual. */
+    cursor: pointer;  /* Linea 157: asigna la propiedad 'cursor' con el valor 'pointer' en el estilo actual. */
+    letter-spacing: 0.5px;  /* Linea 158: asigna la propiedad 'letter-spacing' con el valor '0.5px' en el estilo actual. */
+}  /* Linea 159: cierra el bloque de reglas CSS actual. */
+/* Linea 160: separador visual para ordenar secciones de estilos. */
+
+.nav-desktop {  /* Linea 161: abre el bloque de estilos del selector '.nav-desktop'. */
+    display: none;  /* Linea 162: asigna la propiedad 'display' con el valor 'none' en el estilo actual. */
+    gap: 2rem;  /* Linea 163: asigna la propiedad 'gap' con el valor '2rem' en el estilo actual. */
+    align-items: center;  /* Linea 164: asigna la propiedad 'align-items' con el valor 'center' en el estilo actual. */
+}  /* Linea 165: cierra el bloque de reglas CSS actual. */
+/* Linea 166: separador visual para ordenar secciones de estilos. */
+
+.nav-desktop a {  /* Linea 167: abre el bloque de estilos del selector '.nav-desktop a'. */
+    font-size: 0.875rem;  /* Linea 168: asigna la propiedad 'font-size' con el valor '0.875rem' en el estilo actual. */
+    font-weight: 500;  /* Linea 169: asigna la propiedad 'font-weight' con el valor '500' en el estilo actual. */
+    letter-spacing: 0.3px;  /* Linea 170: asigna la propiedad 'letter-spacing' con el valor '0.3px' en el estilo actual. */
+    transition: color 0.3s ease;  /* Linea 171: asigna la propiedad 'transition' con el valor 'color 0.3s ease' en el estilo actual. */
+}  /* Linea 172: cierra el bloque de reglas CSS actual. */
+/* Linea 173: separador visual para ordenar secciones de estilos. */
+
+.nav-desktop a:hover {  /* Linea 174: abre el bloque de estilos del selector '.nav-desktop a:hover'. */
+    color: var(--hotel-gold);  /* Linea 175: asigna la propiedad 'color' con el valor 'var(--hotel-gold)' en el estilo actual. */
+}  /* Linea 176: cierra el bloque de reglas CSS actual. */
+/* Linea 177: separador visual para ordenar secciones de estilos. */
+
+.cta-desktop {  /* Linea 178: abre el bloque de estilos del selector '.cta-desktop'. */
+    display: none;  /* Linea 179: asigna la propiedad 'display' con el valor 'none' en el estilo actual. */
+}  /* Linea 180: cierra el bloque de reglas CSS actual. */
+/* Linea 181: separador visual para ordenar secciones de estilos. */
+
+.menu-toggle {  /* Linea 182: abre el bloque de estilos del selector '.menu-toggle'. */
+    background: none;  /* Linea 183: asigna la propiedad 'background' con el valor 'none' en el estilo actual. */
+    font-size: 1.5rem;  /* Linea 184: asigna la propiedad 'font-size' con el valor '1.5rem' en el estilo actual. */
+    color: var(--hotel-black);  /* Linea 185: asigna la propiedad 'color' con el valor 'var(--hotel-black)' en el estilo actual. */
+    padding: 0.5rem;  /* Linea 186: asigna la propiedad 'padding' con el valor '0.5rem' en el estilo actual. */
+}  /* Linea 187: cierra el bloque de reglas CSS actual. */
+/* Linea 188: separador visual para ordenar secciones de estilos. */
+
+.nav-mobile {  /* Linea 189: abre el bloque de estilos del selector '.nav-mobile'. */
+    display: none;  /* Linea 190: asigna la propiedad 'display' con el valor 'none' en el estilo actual. */
+    flex-direction: column;  /* Linea 191: asigna la propiedad 'flex-direction' con el valor 'column' en el estilo actual. */
+    gap: 0.5rem;  /* Linea 192: asigna la propiedad 'gap' con el valor '0.5rem' en el estilo actual. */
+    padding: 1.5rem 1rem;  /* Linea 193: asigna la propiedad 'padding' con el valor '1.5rem 1rem' en el estilo actual. */
+    border-top: 1px solid rgba(0, 0, 0, 0.1);  /* Linea 194: asigna la propiedad 'border-top' con el valor '1px solid rgba(0, 0, 0, 0.1)' en el estilo actual. */
+}  /* Linea 195: cierra el bloque de reglas CSS actual. */
+/* Linea 196: separador visual para ordenar secciones de estilos. */
+
+.nav-mobile.active {  /* Linea 197: abre el bloque de estilos del selector '.nav-mobile.active'. */
+    display: flex;  /* Linea 198: asigna la propiedad 'display' con el valor 'flex' en el estilo actual. */
+}  /* Linea 199: cierra el bloque de reglas CSS actual. */
+/* Linea 200: separador visual para ordenar secciones de estilos. */
+
+.nav-mobile a {  /* Linea 201: abre el bloque de estilos del selector '.nav-mobile a'. */
+    padding: 0.75rem 1rem;  /* Linea 202: asigna la propiedad 'padding' con el valor '0.75rem 1rem' en el estilo actual. */
+    border-radius: 0.5rem;  /* Linea 203: asigna la propiedad 'border-radius' con el valor '0.5rem' en el estilo actual. */
+    transition: background-color 0.3s ease;  /* Linea 204: asigna la propiedad 'transition' con el valor 'background-color 0.3s ease' en el estilo actual. */
+}  /* Linea 205: cierra el bloque de reglas CSS actual. */
+/* Linea 206: separador visual para ordenar secciones de estilos. */
+
+.nav-mobile a:hover {  /* Linea 207: abre el bloque de estilos del selector '.nav-mobile a:hover'. */
+    background-color: var(--hotel-beige);  /* Linea 208: asigna la propiedad 'background-color' con el valor 'var(--hotel-beige)' en el estilo actual. */
+}  /* Linea 209: cierra el bloque de reglas CSS actual. */
+/* Linea 210: separador visual para ordenar secciones de estilos. */
+
+.btn-mobile {  /* Linea 211: abre el bloque de estilos del selector '.btn-mobile'. */
+    margin-top: 1rem;  /* Linea 212: asigna la propiedad 'margin-top' con el valor '1rem' en el estilo actual. */
+    width: 100%;  /* Linea 213: asigna la propiedad 'width' con el valor '100%' en el estilo actual. */
+}  /* Linea 214: cierra el bloque de reglas CSS actual. */
+/* Linea 215: separador visual para ordenar secciones de estilos. */
+
+@media (min-width: 1024px) {  /* Linea 216: inicia una regla responsive para aplicar estilos segun la condicion 'min-width: 1024px'. */
+    .nav-desktop {  /* Linea 217: abre el bloque de estilos del selector '.nav-desktop'. */
+        display: flex;  /* Linea 218: asigna la propiedad 'display' con el valor 'flex' en el estilo actual. */
+    }  /* Linea 219: cierra el bloque de reglas CSS actual. */
+/* Linea 220: separador visual para ordenar secciones de estilos. */
+    
+    .cta-desktop {  /* Linea 221: abre el bloque de estilos del selector '.cta-desktop'. */
+        display: block;  /* Linea 222: asigna la propiedad 'display' con el valor 'block' en el estilo actual. */
+    }  /* Linea 223: cierra el bloque de reglas CSS actual. */
+/* Linea 224: separador visual para ordenar secciones de estilos. */
+    
+    .menu-toggle {  /* Linea 225: abre el bloque de estilos del selector '.menu-toggle'. */
+        display: none;  /* Linea 226: asigna la propiedad 'display' con el valor 'none' en el estilo actual. */
+    }  /* Linea 227: cierra el bloque de reglas CSS actual. */
+}  /* Linea 228: cierra el bloque de reglas CSS actual. */
+/* Linea 229: separador visual para ordenar secciones de estilos. */
+
+/* Linea 230: comentario CSS que describe la seccion de estilos. */
+/* ============================================
+   HERO SECTION  /* Linea 231: define o ajusta una regla de estilo para controlar la presentacion visual. */
+ /*  ============================================ */  /* Linea 232: define o ajusta una regla de estilo para controlar la presentacion visual. */
+/* Linea 233: separador visual para ordenar secciones de estilos. */
+
+.hero {  /* Linea 234: abre el bloque de estilos del selector '.hero'. */
+    position: relative;  /* Linea 235: asigna la propiedad 'position' con el valor 'relative' en el estilo actual. */
+    height: 100vh;  /* Linea 236: asigna la propiedad 'height' con el valor '100vh' en el estilo actual. */
+    min-height: 600px;  /* Linea 237: asigna la propiedad 'min-height' con el valor '600px' en el estilo actual. */
+    display: flex;  /* Linea 238: asigna la propiedad 'display' con el valor 'flex' en el estilo actual. */
+    align-items: center;  /* Linea 239: asigna la propiedad 'align-items' con el valor 'center' en el estilo actual. */
+    justify-content: center;  /* Linea 240: asigna la propiedad 'justify-content' con el valor 'center' en el estilo actual. */
+    overflow: hidden;  /* Linea 241: asigna la propiedad 'overflow' con el valor 'hidden' en el estilo actual. */
+}  /* Linea 242: cierra el bloque de reglas CSS actual. */
+/* Linea 243: separador visual para ordenar secciones de estilos. */
+
+.hero-image {  /* Linea 244: abre el bloque de estilos del selector '.hero-image'. */
+    position: absolute;  /* Linea 245: asigna la propiedad 'position' con el valor 'absolute' en el estilo actual. */
+    inset: 0;  /* Linea 246: asigna la propiedad 'inset' con el valor '0' en el estilo actual. */
+    z-index: 0;  /* Linea 247: asigna la propiedad 'z-index' con el valor '0' en el estilo actual. */
+}  /* Linea 248: cierra el bloque de reglas CSS actual. */
+/* Linea 249: separador visual para ordenar secciones de estilos. */
+
+.hero-image img {  /* Linea 250: abre el bloque de estilos del selector '.hero-image img'. */
+    width: 100%;  /* Linea 251: asigna la propiedad 'width' con el valor '100%' en el estilo actual. */
+    height: 100%;  /* Linea 252: asigna la propiedad 'height' con el valor '100%' en el estilo actual. */
+    object-fit: cover;  /* Linea 253: asigna la propiedad 'object-fit' con el valor 'cover' en el estilo actual. */
+}  /* Linea 254: cierra el bloque de reglas CSS actual. */
+/* Linea 255: separador visual para ordenar secciones de estilos. */
+
+.hero-overlay {  /* Linea 256: abre el bloque de estilos del selector '.hero-overlay'. */
+    position: absolute;  /* Linea 257: asigna la propiedad 'position' con el valor 'absolute' en el estilo actual. */
+    inset: 0;  /* Linea 258: asigna la propiedad 'inset' con el valor '0' en el estilo actual. */
+    background: linear-gradient(to bottom, rgba(0,0,0,0.6), rgba(0,0,0,0.5), rgba(0,0,0,0.7));  /* Linea 259: asigna la propiedad 'background' con el valor 'linear-gradient(to bottom, rgba(0,0,0,0.6), rgba(0,0,0,0.5), rgba(0,0,0,0.7))' en el estilo actual. */
+}  /* Linea 260: cierra el bloque de reglas CSS actual. */
+/* Linea 261: separador visual para ordenar secciones de estilos. */
+
+.hero-content {  /* Linea 262: abre el bloque de estilos del selector '.hero-content'. */
+    position: relative;  /* Linea 263: asigna la propiedad 'position' con el valor 'relative' en el estilo actual. */
+    z-index: 10;  /* Linea 264: asigna la propiedad 'z-index' con el valor '10' en el estilo actual. */
+    text-align: center;  /* Linea 265: asigna la propiedad 'text-align' con el valor 'center' en el estilo actual. */
+    padding: 0 1rem;  /* Linea 266: asigna la propiedad 'padding' con el valor '0 1rem' en el estilo actual. */
+    max-width: 1200px;  /* Linea 267: asigna la propiedad 'max-width' con el valor '1200px' en el estilo actual. */
+    margin: 0 auto;  /* Linea 268: asigna la propiedad 'margin' con el valor '0 auto' en el estilo actual. */
+}  /* Linea 269: cierra el bloque de reglas CSS actual. */
+/* Linea 270: separador visual para ordenar secciones de estilos. */
+
+.hero-title {  /* Linea 271: abre el bloque de estilos del selector '.hero-title'. */
+    font-family: var(--font-heading);  /* Linea 272: asigna la propiedad 'font-family' con el valor 'var(--font-heading)' en el estilo actual. */
+    font-size: 2.5rem;  /* Linea 273: asigna la propiedad 'font-size' con el valor '2.5rem' en el estilo actual. */
+    color: var(--hotel-white);  /* Linea 274: asigna la propiedad 'color' con el valor 'var(--hotel-white)' en el estilo actual. */
+    margin-bottom: 1.5rem;  /* Linea 275: asigna la propiedad 'margin-bottom' con el valor '1.5rem' en el estilo actual. */
+    line-height: 1.2;  /* Linea 276: asigna la propiedad 'line-height' con el valor '1.2' en el estilo actual. */
+}  /* Linea 277: cierra el bloque de reglas CSS actual. */
+/* Linea 278: separador visual para ordenar secciones de estilos. */
+
+.hero-subtitle {  /* Linea 279: abre el bloque de estilos del selector '.hero-subtitle'. */
+    font-size: 1.125rem;  /* Linea 280: asigna la propiedad 'font-size' con el valor '1.125rem' en el estilo actual. */
+    color: rgba(255, 255, 255, 0.9);  /* Linea 281: asigna la propiedad 'color' con el valor 'rgba(255, 255, 255, 0.9)' en el estilo actual. */
+    margin-bottom: 3rem;  /* Linea 282: asigna la propiedad 'margin-bottom' con el valor '3rem' en el estilo actual. */
+    max-width: 48rem;  /* Linea 283: asigna la propiedad 'max-width' con el valor '48rem' en el estilo actual. */
+    margin-left: auto;  /* Linea 284: asigna la propiedad 'margin-left' con el valor 'auto' en el estilo actual. */
+    margin-right: auto;  /* Linea 285: asigna la propiedad 'margin-right' con el valor 'auto' en el estilo actual. */
+}  /* Linea 286: cierra el bloque de reglas CSS actual. */
+/* Linea 287: separador visual para ordenar secciones de estilos. */
+
+.hero-buttons {  /* Linea 288: abre el bloque de estilos del selector '.hero-buttons'. */
+    display: flex;  /* Linea 289: asigna la propiedad 'display' con el valor 'flex' en el estilo actual. */
+    flex-direction: column;  /* Linea 290: asigna la propiedad 'flex-direction' con el valor 'column' en el estilo actual. */
+    gap: 1rem;  /* Linea 291: asigna la propiedad 'gap' con el valor '1rem' en el estilo actual. */
+    align-items: center;  /* Linea 292: asigna la propiedad 'align-items' con el valor 'center' en el estilo actual. */
+}  /* Linea 293: cierra el bloque de reglas CSS actual. */
+/* Linea 294: separador visual para ordenar secciones de estilos. */
+
+.hero-buttons button {  /* Linea 295: abre el bloque de estilos del selector '.hero-buttons button'. */
+    width: 100%;  /* Linea 296: asigna la propiedad 'width' con el valor '100%' en el estilo actual. */
+    max-width: 300px;  /* Linea 297: asigna la propiedad 'max-width' con el valor '300px' en el estilo actual. */
+}  /* Linea 298: cierra el bloque de reglas CSS actual. */
+/* Linea 299: separador visual para ordenar secciones de estilos. */
+
+.scroll-indicator {  /* Linea 300: abre el bloque de estilos del selector '.scroll-indicator'. */
+    position: absolute;  /* Linea 301: asigna la propiedad 'position' con el valor 'absolute' en el estilo actual. */
+    bottom: 2rem;  /* Linea 302: asigna la propiedad 'bottom' con el valor '2rem' en el estilo actual. */
+    left: 50%;  /* Linea 303: asigna la propiedad 'left' con el valor '50%' en el estilo actual. */
+    transform: translateX(-50%);  /* Linea 304: asigna la propiedad 'transform' con el valor 'translateX(-50%)' en el estilo actual. */
+    color: rgba(255, 255, 255, 0.7);  /* Linea 305: asigna la propiedad 'color' con el valor 'rgba(255, 255, 255, 0.7)' en el estilo actual. */
+    animation: bounce 2s infinite;  /* Linea 306: asigna la propiedad 'animation' con el valor 'bounce 2s infinite' en el estilo actual. */
+}  /* Linea 307: cierra el bloque de reglas CSS actual. */
+/* Linea 308: separador visual para ordenar secciones de estilos. */
+
+@keyframes bounce {  /* Linea 309: define la animacion 'bounce' con estados intermedios. */
+    0%, 20%, 50%, 80%, 100% {  /* Linea 310: abre el bloque de estilos del selector '0%, 20%, 50%, 80%, 100%'. */
+        transform: translateX(-50%) translateY(0);  /* Linea 311: asigna la propiedad 'transform' con el valor 'translateX(-50%) translateY(0)' en el estilo actual. */
+    }  /* Linea 312: cierra el bloque de reglas CSS actual. */
+    40% {  /* Linea 313: abre el bloque de estilos del selector '40%'. */
+        transform: translateX(-50%) translateY(-10px);  /* Linea 314: asigna la propiedad 'transform' con el valor 'translateX(-50%) translateY(-10px)' en el estilo actual. */
+    }  /* Linea 315: cierra el bloque de reglas CSS actual. */
+    60% {  /* Linea 316: abre el bloque de estilos del selector '60%'. */
+        transform: translateX(-50%) translateY(-5px);  /* Linea 317: asigna la propiedad 'transform' con el valor 'translateX(-50%) translateY(-5px)' en el estilo actual. */
+    }  /* Linea 318: cierra el bloque de reglas CSS actual. */
+}  /* Linea 319: cierra el bloque de reglas CSS actual. */
+/* Linea 320: separador visual para ordenar secciones de estilos. */
+
+@media (min-width: 640px) {  /* Linea 321: inicia una regla responsive para aplicar estilos segun la condicion 'min-width: 640px'. */
+    .hero-title {  /* Linea 322: abre el bloque de estilos del selector '.hero-title'. */
+        font-size: 3.5rem;  /* Linea 323: asigna la propiedad 'font-size' con el valor '3.5rem' en el estilo actual. */
+    }  /* Linea 324: cierra el bloque de reglas CSS actual. */
+/* Linea 325: separador visual para ordenar secciones de estilos. */
+    
+    .hero-subtitle {  /* Linea 326: abre el bloque de estilos del selector '.hero-subtitle'. */
+        font-size: 1.25rem;  /* Linea 327: asigna la propiedad 'font-size' con el valor '1.25rem' en el estilo actual. */
+    }  /* Linea 328: cierra el bloque de reglas CSS actual. */
+/* Linea 329: separador visual para ordenar secciones de estilos. */
+    
+    .hero-buttons {  /* Linea 330: abre el bloque de estilos del selector '.hero-buttons'. */
+        flex-direction: row;  /* Linea 331: asigna la propiedad 'flex-direction' con el valor 'row' en el estilo actual. */
+        justify-content: center;  /* Linea 332: asigna la propiedad 'justify-content' con el valor 'center' en el estilo actual. */
+    }  /* Linea 333: cierra el bloque de reglas CSS actual. */
+/* Linea 334: separador visual para ordenar secciones de estilos. */
+    
+    .hero-buttons button {  /* Linea 335: abre el bloque de estilos del selector '.hero-buttons button'. */
+        width: auto;  /* Linea 336: asigna la propiedad 'width' con el valor 'auto' en el estilo actual. */
+    }  /* Linea 337: cierra el bloque de reglas CSS actual. */
+}  /* Linea 338: cierra el bloque de reglas CSS actual. */
+/* Linea 339: separador visual para ordenar secciones de estilos. */
+
+@media (min-width: 768px) {  /* Linea 340: inicia una regla responsive para aplicar estilos segun la condicion 'min-width: 768px'. */
+    .hero-title {  /* Linea 341: abre el bloque de estilos del selector '.hero-title'. */
+        font-size: 4rem;  /* Linea 342: asigna la propiedad 'font-size' con el valor '4rem' en el estilo actual. */
+    }  /* Linea 343: cierra el bloque de reglas CSS actual. */
+}  /* Linea 344: cierra el bloque de reglas CSS actual. */
+/* Linea 345: separador visual para ordenar secciones de estilos. */
+
+@media (min-width: 1024px) {  /* Linea 346: inicia una regla responsive para aplicar estilos segun la condicion 'min-width: 1024px'. */
+    .hero-title {  /* Linea 347: abre el bloque de estilos del selector '.hero-title'. */
+        font-size: 4.5rem;  /* Linea 348: asigna la propiedad 'font-size' con el valor '4.5rem' en el estilo actual. */
+    }  /* Linea 349: cierra el bloque de reglas CSS actual. */
+}  /* Linea 350: cierra el bloque de reglas CSS actual. */
+/* Linea 351: separador visual para ordenar secciones de estilos. */
+
+/* Linea 352: comentario CSS que describe la seccion de estilos. */
+/* ============================================
+   ABOUT SECTION  /* Linea 353: define o ajusta una regla de estilo para controlar la presentacion visual. */
+ /*  ============================================ */  /* Linea 354: define o ajusta una regla de estilo para controlar la presentacion visual. */
+/* Linea 355: separador visual para ordenar secciones de estilos. */
+
+.about {  /* Linea 356: abre el bloque de estilos del selector '.about'. */
+    padding: 5rem 0;  /* Linea 357: asigna la propiedad 'padding' con el valor '5rem 0' en el estilo actual. */
+    background-color: var(--hotel-gray);  /* Linea 358: asigna la propiedad 'background-color' con el valor 'var(--hotel-gray)' en el estilo actual. */
+}  /* Linea 359: cierra el bloque de reglas CSS actual. */
+/* Linea 360: separador visual para ordenar secciones de estilos. */
+
+.about-grid {  /* Linea 361: abre el bloque de estilos del selector '.about-grid'. */
+    display: grid;  /* Linea 362: asigna la propiedad 'display' con el valor 'grid' en el estilo actual. */
+    gap: 3rem;  /* Linea 363: asigna la propiedad 'gap' con el valor '3rem' en el estilo actual. */
+}  /* Linea 364: cierra el bloque de reglas CSS actual. */
+/* Linea 365: separador visual para ordenar secciones de estilos. */
+
+.about-text h2 {  /* Linea 366: abre el bloque de estilos del selector '.about-text h2'. */
+    font-family: var(--font-heading);  /* Linea 367: asigna la propiedad 'font-family' con el valor 'var(--font-heading)' en el estilo actual. */
+    font-size: 2rem;  /* Linea 368: asigna la propiedad 'font-size' con el valor '2rem' en el estilo actual. */
+    margin-bottom: 1.5rem;  /* Linea 369: asigna la propiedad 'margin-bottom' con el valor '1.5rem' en el estilo actual. */
+}  /* Linea 370: cierra el bloque de reglas CSS actual. */
+/* Linea 371: separador visual para ordenar secciones de estilos. */
+
+.about-paragraph {  /* Linea 372: abre el bloque de estilos del selector '.about-paragraph'. */
+    font-size: 1.125rem;  /* Linea 373: asigna la propiedad 'font-size' con el valor '1.125rem' en el estilo actual. */
+    color: rgba(17, 17, 17, 0.8);  /* Linea 374: asigna la propiedad 'color' con el valor 'rgba(17, 17, 17, 0.8)' en el estilo actual. */
+    margin-bottom: 1.5rem;  /* Linea 375: asigna la propiedad 'margin-bottom' con el valor '1.5rem' en el estilo actual. */
+}  /* Linea 376: cierra el bloque de reglas CSS actual. */
+/* Linea 377: separador visual para ordenar secciones de estilos. */
+
+.amenities-grid {  /* Linea 378: abre el bloque de estilos del selector '.amenities-grid'. */
+    display: grid;  /* Linea 379: asigna la propiedad 'display' con el valor 'grid' en el estilo actual. */
+    gap: 1.5rem;  /* Linea 380: asigna la propiedad 'gap' con el valor '1.5rem' en el estilo actual. */
+}  /* Linea 381: cierra el bloque de reglas CSS actual. */
+/* Linea 382: separador visual para ordenar secciones de estilos. */
+
+.amenity-card {  /* Linea 383: abre el bloque de estilos del selector '.amenity-card'. */
+    background-color: var(--hotel-white);  /* Linea 384: asigna la propiedad 'background-color' con el valor 'var(--hotel-white)' en el estilo actual. */
+    padding: 1.5rem;  /* Linea 385: asigna la propiedad 'padding' con el valor '1.5rem' en el estilo actual. */
+    border-radius: 0.75rem;  /* Linea 386: asigna la propiedad 'border-radius' con el valor '0.75rem' en el estilo actual. */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);  /* Linea 387: asigna la propiedad 'box-shadow' con el valor '0 2px 8px rgba(0, 0, 0, 0.05)' en el estilo actual. */
+    transition: box-shadow 0.3s ease;  /* Linea 388: asigna la propiedad 'transition' con el valor 'box-shadow 0.3s ease' en el estilo actual. */
+}  /* Linea 389: cierra el bloque de reglas CSS actual. */
+/* Linea 390: separador visual para ordenar secciones de estilos. */
+
+.amenity-card:hover {  /* Linea 391: abre el bloque de estilos del selector '.amenity-card:hover'. */
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);  /* Linea 392: asigna la propiedad 'box-shadow' con el valor '0 4px 16px rgba(0, 0, 0, 0.1)' en el estilo actual. */
+}  /* Linea 393: cierra el bloque de reglas CSS actual. */
+/* Linea 394: separador visual para ordenar secciones de estilos. */
+
+.amenity-icon {  /* Linea 395: abre el bloque de estilos del selector '.amenity-icon'. */
+    width: 3rem;  /* Linea 396: asigna la propiedad 'width' con el valor '3rem' en el estilo actual. */
+    height: 3rem;  /* Linea 397: asigna la propiedad 'height' con el valor '3rem' en el estilo actual. */
+    background-color: var(--hotel-beige);  /* Linea 398: asigna la propiedad 'background-color' con el valor 'var(--hotel-beige)' en el estilo actual. */
+    border-radius: 0.5rem;  /* Linea 399: asigna la propiedad 'border-radius' con el valor '0.5rem' en el estilo actual. */
+    display: flex;  /* Linea 400: asigna la propiedad 'display' con el valor 'flex' en el estilo actual. */
+    align-items: center;  /* Linea 401: asigna la propiedad 'align-items' con el valor 'center' en el estilo actual. */
+    justify-content: center;  /* Linea 402: asigna la propiedad 'justify-content' con el valor 'center' en el estilo actual. */
+    margin-bottom: 1rem;  /* Linea 403: asigna la propiedad 'margin-bottom' con el valor '1rem' en el estilo actual. */
+}  /* Linea 404: cierra el bloque de reglas CSS actual. */
+/* Linea 405: separador visual para ordenar secciones de estilos. */
+
+.amenity-icon svg {  /* Linea 406: abre el bloque de estilos del selector '.amenity-icon svg'. */
+    color: var(--hotel-gold);  /* Linea 407: asigna la propiedad 'color' con el valor 'var(--hotel-gold)' en el estilo actual. */
+}  /* Linea 408: cierra el bloque de reglas CSS actual. */
+/* Linea 409: separador visual para ordenar secciones de estilos. */
+
+.amenity-card h3 {  /* Linea 410: abre el bloque de estilos del selector '.amenity-card h3'. */
+    font-size: 1rem;  /* Linea 411: asigna la propiedad 'font-size' con el valor '1rem' en el estilo actual. */
+    margin-bottom: 0.5rem;  /* Linea 412: asigna la propiedad 'margin-bottom' con el valor '0.5rem' en el estilo actual. */
+}  /* Linea 413: cierra el bloque de reglas CSS actual. */
+/* Linea 414: separador visual para ordenar secciones de estilos. */
+
+.amenity-card p {  /* Linea 415: abre el bloque de estilos del selector '.amenity-card p'. */
+    font-size: 0.875rem;  /* Linea 416: asigna la propiedad 'font-size' con el valor '0.875rem' en el estilo actual. */
+    color: rgba(17, 17, 17, 0.7);  /* Linea 417: asigna la propiedad 'color' con el valor 'rgba(17, 17, 17, 0.7)' en el estilo actual. */
+}  /* Linea 418: cierra el bloque de reglas CSS actual. */
+/* Linea 419: separador visual para ordenar secciones de estilos. */
+
+@media (min-width: 768px) {  /* Linea 420: inicia una regla responsive para aplicar estilos segun la condicion 'min-width: 768px'. */
+    .about-grid {  /* Linea 421: abre el bloque de estilos del selector '.about-grid'. */
+        grid-template-columns: 1fr 1fr;  /* Linea 422: asigna la propiedad 'grid-template-columns' con el valor '1fr 1fr' en el estilo actual. */
+        gap: 4rem;  /* Linea 423: asigna la propiedad 'gap' con el valor '4rem' en el estilo actual. */
+        align-items: center;  /* Linea 424: asigna la propiedad 'align-items' con el valor 'center' en el estilo actual. */
+    }  /* Linea 425: cierra el bloque de reglas CSS actual. */
+/* Linea 426: separador visual para ordenar secciones de estilos. */
+    
+    .about-text h2 {  /* Linea 427: abre el bloque de estilos del selector '.about-text h2'. */
+        font-size: 2.5rem;  /* Linea 428: asigna la propiedad 'font-size' con el valor '2.5rem' en el estilo actual. */
+    }  /* Linea 429: cierra el bloque de reglas CSS actual. */
+/* Linea 430: separador visual para ordenar secciones de estilos. */
+    
+    .amenities-grid {  /* Linea 431: abre el bloque de estilos del selector '.amenities-grid'. */
+        grid-template-columns: 1fr 1fr;  /* Linea 432: asigna la propiedad 'grid-template-columns' con el valor '1fr 1fr' en el estilo actual. */
+    }  /* Linea 433: cierra el bloque de reglas CSS actual. */
+}  /* Linea 434: cierra el bloque de reglas CSS actual. */
+/* Linea 435: separador visual para ordenar secciones de estilos. */
+
+@media (min-width: 1024px) {  /* Linea 436: inicia una regla responsive para aplicar estilos segun la condicion 'min-width: 1024px'. */
+    .about {  /* Linea 437: abre el bloque de estilos del selector '.about'. */
+        padding: 8rem 0;  /* Linea 438: asigna la propiedad 'padding' con el valor '8rem 0' en el estilo actual. */
+    }  /* Linea 439: cierra el bloque de reglas CSS actual. */
+/* Linea 440: separador visual para ordenar secciones de estilos. */
+    
+    .about-text h2 {  /* Linea 441: abre el bloque de estilos del selector '.about-text h2'. */
+        font-size: 3rem;  /* Linea 442: asigna la propiedad 'font-size' con el valor '3rem' en el estilo actual. */
+    }  /* Linea 443: cierra el bloque de reglas CSS actual. */
+}  /* Linea 444: cierra el bloque de reglas CSS actual. */
+/* Linea 445: separador visual para ordenar secciones de estilos. */
+
+/* Linea 446: comentario CSS que describe la seccion de estilos. */
+/* ============================================
+   ROOMS SECTION  /* Linea 447: define o ajusta una regla de estilo para controlar la presentacion visual. */
+ /*  ============================================ */  /* Linea 448: define o ajusta una regla de estilo para controlar la presentacion visual. */
+/* Linea 449: separador visual para ordenar secciones de estilos. */
+
+.rooms {  /* Linea 450: abre el bloque de estilos del selector '.rooms'. */
+    padding: 5rem 0;  /* Linea 451: asigna la propiedad 'padding' con el valor '5rem 0' en el estilo actual. */
+    background-color: var(--hotel-white);  /* Linea 452: asigna la propiedad 'background-color' con el valor 'var(--hotel-white)' en el estilo actual. */
+}  /* Linea 453: cierra el bloque de reglas CSS actual. */
+/* Linea 454: separador visual para ordenar secciones de estilos. */
+
+.section-header {  /* Linea 455: abre el bloque de estilos del selector '.section-header'. */
+    text-align: center;  /* Linea 456: asigna la propiedad 'text-align' con el valor 'center' en el estilo actual. */
+    margin-bottom: 4rem;  /* Linea 457: asigna la propiedad 'margin-bottom' con el valor '4rem' en el estilo actual. */
+}  /* Linea 458: cierra el bloque de reglas CSS actual. */
+/* Linea 459: separador visual para ordenar secciones de estilos. */
+
+.section-header h2 {  /* Linea 460: abre el bloque de estilos del selector '.section-header h2'. */
+    font-family: var(--font-heading);  /* Linea 461: asigna la propiedad 'font-family' con el valor 'var(--font-heading)' en el estilo actual. */
+    font-size: 2rem;  /* Linea 462: asigna la propiedad 'font-size' con el valor '2rem' en el estilo actual. */
+    margin-bottom: 1.5rem;  /* Linea 463: asigna la propiedad 'margin-bottom' con el valor '1.5rem' en el estilo actual. */
+}  /* Linea 464: cierra el bloque de reglas CSS actual. */
+/* Linea 465: separador visual para ordenar secciones de estilos. */
+
+.section-header p {  /* Linea 466: abre el bloque de estilos del selector '.section-header p'. */
+    font-size: 1.125rem;  /* Linea 467: asigna la propiedad 'font-size' con el valor '1.125rem' en el estilo actual. */
+    color: rgba(17, 17, 17, 0.7);  /* Linea 468: asigna la propiedad 'color' con el valor 'rgba(17, 17, 17, 0.7)' en el estilo actual. */
+    max-width: 42rem;  /* Linea 469: asigna la propiedad 'max-width' con el valor '42rem' en el estilo actual. */
+    margin: 0 auto;  /* Linea 470: asigna la propiedad 'margin' con el valor '0 auto' en el estilo actual. */
+}  /* Linea 471: cierra el bloque de reglas CSS actual. */
+/* Linea 472: separador visual para ordenar secciones de estilos. */
+
+.rooms-grid {  /* Linea 473: abre el bloque de estilos del selector '.rooms-grid'. */
+    display: grid;  /* Linea 474: asigna la propiedad 'display' con el valor 'grid' en el estilo actual. */
+    gap: 2rem;  /* Linea 475: asigna la propiedad 'gap' con el valor '2rem' en el estilo actual. */
+}  /* Linea 476: cierra el bloque de reglas CSS actual. */
+/* Linea 477: separador visual para ordenar secciones de estilos. */
+
+.room-card {  /* Linea 478: abre el bloque de estilos del selector '.room-card'. */
+    background-color: var(--hotel-white);  /* Linea 479: asigna la propiedad 'background-color' con el valor 'var(--hotel-white)' en el estilo actual. */
+    border-radius: 0.75rem;  /* Linea 480: asigna la propiedad 'border-radius' con el valor '0.75rem' en el estilo actual. */
+    overflow: hidden;  /* Linea 481: asigna la propiedad 'overflow' con el valor 'hidden' en el estilo actual. */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);  /* Linea 482: asigna la propiedad 'box-shadow' con el valor '0 4px 20px rgba(0, 0, 0, 0.1)' en el estilo actual. */
+    transition: all 0.3s ease;  /* Linea 483: asigna la propiedad 'transition' con el valor 'all 0.3s ease' en el estilo actual. */
+    display: flex;  /* Linea 484: asigna la propiedad 'display' con el valor 'flex' en el estilo actual. */
+    flex-direction: column;  /* Linea 485: asigna la propiedad 'flex-direction' con el valor 'column' en el estilo actual. */
+}  /* Linea 486: cierra el bloque de reglas CSS actual. */
+/* Linea 487: separador visual para ordenar secciones de estilos. */
+
+.room-card:hover {  /* Linea 488: abre el bloque de estilos del selector '.room-card:hover'. */
+    box-shadow: 0 8px 40px rgba(0, 0, 0, 0.15);  /* Linea 489: asigna la propiedad 'box-shadow' con el valor '0 8px 40px rgba(0, 0, 0, 0.15)' en el estilo actual. */
+    transform: translateY(-5px);  /* Linea 490: asigna la propiedad 'transform' con el valor 'translateY(-5px)' en el estilo actual. */
+}  /* Linea 491: cierra el bloque de reglas CSS actual. */
+/* Linea 492: separador visual para ordenar secciones de estilos. */
+
+.room-card.highlighted {  /* Linea 493: abre el bloque de estilos del selector '.room-card.highlighted'. */
+    border: 2px solid var(--hotel-gold);  /* Linea 494: asigna la propiedad 'border' con el valor '2px solid var(--hotel-gold)' en el estilo actual. */
+}  /* Linea 495: cierra el bloque de reglas CSS actual. */
+/* Linea 496: separador visual para ordenar secciones de estilos. */
+
+.room-image {  /* Linea 497: abre el bloque de estilos del selector '.room-image'. */
+    position: relative;  /* Linea 498: asigna la propiedad 'position' con el valor 'relative' en el estilo actual. */
+    height: 16rem;  /* Linea 499: asigna la propiedad 'height' con el valor '16rem' en el estilo actual. */
+    overflow: hidden;  /* Linea 500: asigna la propiedad 'overflow' con el valor 'hidden' en el estilo actual. */
+}  /* Linea 501: cierra el bloque de reglas CSS actual. */
+/* Linea 502: separador visual para ordenar secciones de estilos. */
+
+.room-image img {  /* Linea 503: abre el bloque de estilos del selector '.room-image img'. */
+    width: 100%;  /* Linea 504: asigna la propiedad 'width' con el valor '100%' en el estilo actual. */
+    height: 100%;  /* Linea 505: asigna la propiedad 'height' con el valor '100%' en el estilo actual. */
+    object-fit: cover;  /* Linea 506: asigna la propiedad 'object-fit' con el valor 'cover' en el estilo actual. */
+    transition: transform 0.5s ease;  /* Linea 507: asigna la propiedad 'transition' con el valor 'transform 0.5s ease' en el estilo actual. */
+}  /* Linea 508: cierra el bloque de reglas CSS actual. */
+/* Linea 509: separador visual para ordenar secciones de estilos. */
+
+.room-card:hover .room-image img {  /* Linea 510: abre el bloque de estilos del selector '.room-card:hover .room-image img'. */
+    transform: scale(1.1);  /* Linea 511: asigna la propiedad 'transform' con el valor 'scale(1.1)' en el estilo actual. */
+}  /* Linea 512: cierra el bloque de reglas CSS actual. */
+/* Linea 513: separador visual para ordenar secciones de estilos. */
+
+.room-badge {  /* Linea 514: abre el bloque de estilos del selector '.room-badge'. */
+    position: absolute;  /* Linea 515: asigna la propiedad 'position' con el valor 'absolute' en el estilo actual. */
+    top: 1rem;  /* Linea 516: asigna la propiedad 'top' con el valor '1rem' en el estilo actual. */
+    right: 1rem;  /* Linea 517: asigna la propiedad 'right' con el valor '1rem' en el estilo actual. */
+    background-color: var(--hotel-gold);  /* Linea 518: asigna la propiedad 'background-color' con el valor 'var(--hotel-gold)' en el estilo actual. */
+    color: var(--hotel-white);  /* Linea 519: asigna la propiedad 'color' con el valor 'var(--hotel-white)' en el estilo actual. */
+    padding: 0.5rem 1rem;  /* Linea 520: asigna la propiedad 'padding' con el valor '0.5rem 1rem' en el estilo actual. */
+    border-radius: 2rem;  /* Linea 521: asigna la propiedad 'border-radius' con el valor '2rem' en el estilo actual. */
+    font-size: 0.875rem;  /* Linea 522: asigna la propiedad 'font-size' con el valor '0.875rem' en el estilo actual. */
+    display: flex;  /* Linea 523: asigna la propiedad 'display' con el valor 'flex' en el estilo actual. */
+    align-items: center;  /* Linea 524: asigna la propiedad 'align-items' con el valor 'center' en el estilo actual. */
+    gap: 0.25rem;  /* Linea 525: asigna la propiedad 'gap' con el valor '0.25rem' en el estilo actual. */
+}  /* Linea 526: cierra el bloque de reglas CSS actual. */
+/* Linea 527: separador visual para ordenar secciones de estilos. */
+
+.room-content {  /* Linea 528: abre el bloque de estilos del selector '.room-content'. */
+    padding: 2rem;  /* Linea 529: asigna la propiedad 'padding' con el valor '2rem' en el estilo actual. */
+    flex: 1;  /* Linea 530: asigna la propiedad 'flex' con el valor '1' en el estilo actual. */
+    display: flex;  /* Linea 531: asigna la propiedad 'display' con el valor 'flex' en el estilo actual. */
+    flex-direction: column;  /* Linea 532: asigna la propiedad 'flex-direction' con el valor 'column' en el estilo actual. */
+}  /* Linea 533: cierra el bloque de reglas CSS actual. */
+/* Linea 534: separador visual para ordenar secciones de estilos. */
+
+.room-content h3 {  /* Linea 535: abre el bloque de estilos del selector '.room-content h3'. */
+    font-family: var(--font-heading);  /* Linea 536: asigna la propiedad 'font-family' con el valor 'var(--font-heading)' en el estilo actual. */
+    font-size: 1.5rem;  /* Linea 537: asigna la propiedad 'font-size' con el valor '1.5rem' en el estilo actual. */
+    margin-bottom: 0.5rem;  /* Linea 538: asigna la propiedad 'margin-bottom' con el valor '0.5rem' en el estilo actual. */
+}  /* Linea 539: cierra el bloque de reglas CSS actual. */
+/* Linea 540: separador visual para ordenar secciones de estilos. */
+
+.room-description {  /* Linea 541: abre el bloque de estilos del selector '.room-description'. */
+    font-size: 0.875rem;  /* Linea 542: asigna la propiedad 'font-size' con el valor '0.875rem' en el estilo actual. */
+    color: rgba(17, 17, 17, 0.7);  /* Linea 543: asigna la propiedad 'color' con el valor 'rgba(17, 17, 17, 0.7)' en el estilo actual. */
+    margin-bottom: 1.5rem;  /* Linea 544: asigna la propiedad 'margin-bottom' con el valor '1.5rem' en el estilo actual. */
+}  /* Linea 545: cierra el bloque de reglas CSS actual. */
+/* Linea 546: separador visual para ordenar secciones de estilos. */
+
+.room-features {  /* Linea 547: abre el bloque de estilos del selector '.room-features'. */
+    list-style: none;  /* Linea 548: asigna la propiedad 'list-style' con el valor 'none' en el estilo actual. */
+    margin-bottom: 1.5rem;  /* Linea 549: asigna la propiedad 'margin-bottom' con el valor '1.5rem' en el estilo actual. */
+    flex: 1;  /* Linea 550: asigna la propiedad 'flex' con el valor '1' en el estilo actual. */
+}  /* Linea 551: cierra el bloque de reglas CSS actual. */
+/* Linea 552: separador visual para ordenar secciones de estilos. */
+
+.room-features li {  /* Linea 553: abre el bloque de estilos del selector '.room-features li'. */
+    font-size: 0.875rem;  /* Linea 554: asigna la propiedad 'font-size' con el valor '0.875rem' en el estilo actual. */
+    color: rgba(17, 17, 17, 0.8);  /* Linea 555: asigna la propiedad 'color' con el valor 'rgba(17, 17, 17, 0.8)' en el estilo actual. */
+    margin-bottom: 0.5rem;  /* Linea 556: asigna la propiedad 'margin-bottom' con el valor '0.5rem' en el estilo actual. */
+    padding-left: 0.5rem;  /* Linea 557: asigna la propiedad 'padding-left' con el valor '0.5rem' en el estilo actual. */
+}  /* Linea 558: cierra el bloque de reglas CSS actual. */
+/* Linea 559: separador visual para ordenar secciones de estilos. */
+
+.room-footer {  /* Linea 560: abre el bloque de estilos del selector '.room-footer'. */
+    border-top: 1px solid var(--hotel-beige);  /* Linea 561: asigna la propiedad 'border-top' con el valor '1px solid var(--hotel-beige)' en el estilo actual. */
+    padding-top: 1.5rem;  /* Linea 562: asigna la propiedad 'padding-top' con el valor '1.5rem' en el estilo actual. */
+}  /* Linea 563: cierra el bloque de reglas CSS actual. */
+/* Linea 564: separador visual para ordenar secciones de estilos. */
+
+.room-price {  /* Linea 565: abre el bloque de estilos del selector '.room-price'. */
+    display: flex;  /* Linea 566: asigna la propiedad 'display' con el valor 'flex' en el estilo actual. */
+    align-items: baseline;  /* Linea 567: asigna la propiedad 'align-items' con el valor 'baseline' en el estilo actual. */
+    justify-content: space-between;  /* Linea 568: asigna la propiedad 'justify-content' con el valor 'space-between' en el estilo actual. */
+    margin-bottom: 1rem;  /* Linea 569: asigna la propiedad 'margin-bottom' con el valor '1rem' en el estilo actual. */
+}  /* Linea 570: cierra el bloque de reglas CSS actual. */
+/* Linea 571: separador visual para ordenar secciones de estilos. */
+
+.room-price .price {  /* Linea 572: abre el bloque de estilos del selector '.room-price .price'. */
+    font-family: var(--font-heading);  /* Linea 573: asigna la propiedad 'font-family' con el valor 'var(--font-heading)' en el estilo actual. */
+    font-size: 2rem;  /* Linea 574: asigna la propiedad 'font-size' con el valor '2rem' en el estilo actual. */
+}  /* Linea 575: cierra el bloque de reglas CSS actual. */
+/* Linea 576: separador visual para ordenar secciones de estilos. */
+
+.room-price .period {  /* Linea 577: abre el bloque de estilos del selector '.room-price .period'. */
+    font-size: 0.875rem;  /* Linea 578: asigna la propiedad 'font-size' con el valor '0.875rem' en el estilo actual. */
+    color: rgba(17, 17, 17, 0.6);  /* Linea 579: asigna la propiedad 'color' con el valor 'rgba(17, 17, 17, 0.6)' en el estilo actual. */
+}  /* Linea 580: cierra el bloque de reglas CSS actual. */
+/* Linea 581: separador visual para ordenar secciones de estilos. */
+
+@media (min-width: 768px) {  /* Linea 582: inicia una regla responsive para aplicar estilos segun la condicion 'min-width: 768px'. */
+    .section-header h2 {  /* Linea 583: abre el bloque de estilos del selector '.section-header h2'. */
+        font-size: 2.5rem;  /* Linea 584: asigna la propiedad 'font-size' con el valor '2.5rem' en el estilo actual. */
+    }  /* Linea 585: cierra el bloque de reglas CSS actual. */
+/* Linea 586: separador visual para ordenar secciones de estilos. */
+    
+    .rooms-grid {  /* Linea 587: abre el bloque de estilos del selector '.rooms-grid'. */
+        grid-template-columns: repeat(2, 1fr);  /* Linea 588: asigna la propiedad 'grid-template-columns' con el valor 'repeat(2, 1fr)' en el estilo actual. */
+    }  /* Linea 589: cierra el bloque de reglas CSS actual. */
+}  /* Linea 590: cierra el bloque de reglas CSS actual. */
+/* Linea 591: separador visual para ordenar secciones de estilos. */
+
+@media (min-width: 1024px) {  /* Linea 592: inicia una regla responsive para aplicar estilos segun la condicion 'min-width: 1024px'. */
+    .rooms {  /* Linea 593: abre el bloque de estilos del selector '.rooms'. */
+        padding: 8rem 0;  /* Linea 594: asigna la propiedad 'padding' con el valor '8rem 0' en el estilo actual. */
+    }  /* Linea 595: cierra el bloque de reglas CSS actual. */
+/* Linea 596: separador visual para ordenar secciones de estilos. */
+    
+    .section-header h2 {  /* Linea 597: abre el bloque de estilos del selector '.section-header h2'. */
+        font-size: 3rem;  /* Linea 598: asigna la propiedad 'font-size' con el valor '3rem' en el estilo actual. */
+    }  /* Linea 599: cierra el bloque de reglas CSS actual. */
+/* Linea 600: separador visual para ordenar secciones de estilos. */
+    
+    .rooms-grid {  /* Linea 601: abre el bloque de estilos del selector '.rooms-grid'. */
+        grid-template-columns: repeat(3, 1fr);  /* Linea 602: asigna la propiedad 'grid-template-columns' con el valor 'repeat(3, 1fr)' en el estilo actual. */
+    }  /* Linea 603: cierra el bloque de reglas CSS actual. */
+/* Linea 604: separador visual para ordenar secciones de estilos. */
+    
+    .room-card.highlighted {  /* Linea 605: abre el bloque de estilos del selector '.room-card.highlighted'. */
+        transform: scale(1.05);  /* Linea 606: asigna la propiedad 'transform' con el valor 'scale(1.05)' en el estilo actual. */
+    }  /* Linea 607: cierra el bloque de reglas CSS actual. */
+}  /* Linea 608: cierra el bloque de reglas CSS actual. */
+/* Linea 609: separador visual para ordenar secciones de estilos. */
+
+/* Linea 610: comentario CSS que describe la seccion de estilos. */
+/* ============================================
+   RESTAURANT & GYM SECTIONS  /* Linea 611: define o ajusta una regla de estilo para controlar la presentacion visual. */
+  /* ============================================ */  /* Linea 612: define o ajusta una regla de estilo para controlar la presentacion visual. */
+/* Linea 613: separador visual para ordenar secciones de estilos. */
+
+.restaurant,  /* Linea 614: define o ajusta una regla de estilo para controlar la presentacion visual. */
+.gym {  /* Linea 615: abre el bloque de estilos del selector '.gym'. */
+    padding: 5rem 0;  /* Linea 616: asigna la propiedad 'padding' con el valor '5rem 0' en el estilo actual. */
+}  /* Linea 617: cierra el bloque de reglas CSS actual. */
+/* Linea 618: separador visual para ordenar secciones de estilos. */
+
+.restaurant {  /* Linea 619: abre el bloque de estilos del selector '.restaurant'. */
+    background-color: var(--hotel-beige);  /* Linea 620: asigna la propiedad 'background-color' con el valor 'var(--hotel-beige)' en el estilo actual. */
+}  /* Linea 621: cierra el bloque de reglas CSS actual. */
+/* Linea 622: separador visual para ordenar secciones de estilos. */
+
+.gym {  /* Linea 623: abre el bloque de estilos del selector '.gym'. */
+    background-color: var(--hotel-white);  /* Linea 624: asigna la propiedad 'background-color' con el valor 'var(--hotel-white)' en el estilo actual. */
+}  /* Linea 625: cierra el bloque de reglas CSS actual. */
+/* Linea 626: separador visual para ordenar secciones de estilos. */
+
+.two-column {  /* Linea 627: abre el bloque de estilos del selector '.two-column'. */
+    display: grid;  /* Linea 628: asigna la propiedad 'display' con el valor 'grid' en el estilo actual. */
+    gap: 3rem;  /* Linea 629: asigna la propiedad 'gap' con el valor '3rem' en el estilo actual. */
+    align-items: center;  /* Linea 630: asigna la propiedad 'align-items' con el valor 'center' en el estilo actual. */
+}  /* Linea 631: cierra el bloque de reglas CSS actual. */
+/* Linea 632: separador visual para ordenar secciones de estilos. */
+
+.column-image {  /* Linea 633: abre el bloque de estilos del selector '.column-image'. */
+    border-radius: 1rem;  /* Linea 634: asigna la propiedad 'border-radius' con el valor '1rem' en el estilo actual. */
+    overflow: hidden;  /* Linea 635: asigna la propiedad 'overflow' con el valor 'hidden' en el estilo actual. */
+    box-shadow: 0 8px 40px rgba(0, 0, 0, 0.15);  /* Linea 636: asigna la propiedad 'box-shadow' con el valor '0 8px 40px rgba(0, 0, 0, 0.15)' en el estilo actual. */
+    height: 25rem;  /* Linea 637: asigna la propiedad 'height' con el valor '25rem' en el estilo actual. */
+}  /* Linea 638: cierra el bloque de reglas CSS actual. */
+/* Linea 639: separador visual para ordenar secciones de estilos. */
+
+.column-image img {  /* Linea 640: abre el bloque de estilos del selector '.column-image img'. */
+    width: 100%;  /* Linea 641: asigna la propiedad 'width' con el valor '100%' en el estilo actual. */
+    height: 100%;  /* Linea 642: asigna la propiedad 'height' con el valor '100%' en el estilo actual. */
+    object-fit: cover;  /* Linea 643: asigna la propiedad 'object-fit' con el valor 'cover' en el estilo actual. */
+}  /* Linea 644: cierra el bloque de reglas CSS actual. */
+/* Linea 645: separador visual para ordenar secciones de estilos. */
+
+.column-content h2 {  /* Linea 646: abre el bloque de estilos del selector '.column-content h2'. */
+    font-family: var(--font-heading);  /* Linea 647: asigna la propiedad 'font-family' con el valor 'var(--font-heading)' en el estilo actual. */
+    font-size: 2rem;  /* Linea 648: asigna la propiedad 'font-size' con el valor '2rem' en el estilo actual. */
+    margin-bottom: 1.5rem;  /* Linea 649: asigna la propiedad 'margin-bottom' con el valor '1.5rem' en el estilo actual. */
+}  /* Linea 650: cierra el bloque de reglas CSS actual. */
+/* Linea 651: separador visual para ordenar secciones de estilos. */
+
+.column-content p {  /* Linea 652: abre el bloque de estilos del selector '.column-content p'. */
+    font-size: 1.125rem;  /* Linea 653: asigna la propiedad 'font-size' con el valor '1.125rem' en el estilo actual. */
+    color: rgba(17, 17, 17, 0.8);  /* Linea 654: asigna la propiedad 'color' con el valor 'rgba(17, 17, 17, 0.8)' en el estilo actual. */
+    margin-bottom: 1.5rem;  /* Linea 655: asigna la propiedad 'margin-bottom' con el valor '1.5rem' en el estilo actual. */
+}  /* Linea 656: cierra el bloque de reglas CSS actual. */
+/* Linea 657: separador visual para ordenar secciones de estilos. */
+
+.features-list {  /* Linea 658: abre el bloque de estilos del selector '.features-list'. */
+    margin-bottom: 2rem;  /* Linea 659: asigna la propiedad 'margin-bottom' con el valor '2rem' en el estilo actual. */
+}  /* Linea 660: cierra el bloque de reglas CSS actual. */
+/* Linea 661: separador visual para ordenar secciones de estilos. */
+
+.feature-item {  /* Linea 662: abre el bloque de estilos del selector '.feature-item'. */
+    display: flex;  /* Linea 663: asigna la propiedad 'display' con el valor 'flex' en el estilo actual. */
+    align-items: center;  /* Linea 664: asigna la propiedad 'align-items' con el valor 'center' en el estilo actual. */
+    gap: 0.75rem;  /* Linea 665: asigna la propiedad 'gap' con el valor '0.75rem' en el estilo actual. */
+    margin-bottom: 1rem;  /* Linea 666: asigna la propiedad 'margin-bottom' con el valor '1rem' en el estilo actual. */
+}  /* Linea 667: cierra el bloque de reglas CSS actual. */
+/* Linea 668: separador visual para ordenar secciones de estilos. */
+
+.feature-icon {  /* Linea 669: abre el bloque de estilos del selector '.feature-icon'. */
+    width: 2.5rem;  /* Linea 670: asigna la propiedad 'width' con el valor '2.5rem' en el estilo actual. */
+    height: 2.5rem;  /* Linea 671: asigna la propiedad 'height' con el valor '2.5rem' en el estilo actual. */
+    background-color: var(--hotel-white);  /* Linea 672: asigna la propiedad 'background-color' con el valor 'var(--hotel-white)' en el estilo actual. */
+    border-radius: 50%;  /* Linea 673: asigna la propiedad 'border-radius' con el valor '50%' en el estilo actual. */
+    display: flex;  /* Linea 674: asigna la propiedad 'display' con el valor 'flex' en el estilo actual. */
+    align-items: center;  /* Linea 675: asigna la propiedad 'align-items' con el valor 'center' en el estilo actual. */
+    justify-content: center;  /* Linea 676: asigna la propiedad 'justify-content' con el valor 'center' en el estilo actual. */
+    font-size: 1.25rem;  /* Linea 677: asigna la propiedad 'font-size' con el valor '1.25rem' en el estilo actual. */
+}  /* Linea 678: cierra el bloque de reglas CSS actual. */
+/* Linea 679: separador visual para ordenar secciones de estilos. */
+
+.gym .feature-icon {  /* Linea 680: abre el bloque de estilos del selector '.gym .feature-icon'. */
+    background-color: var(--hotel-beige);  /* Linea 681: asigna la propiedad 'background-color' con el valor 'var(--hotel-beige)' en el estilo actual. */
+}  /* Linea 682: cierra el bloque de reglas CSS actual. */
+/* Linea 683: separador visual para ordenar secciones de estilos. */
+
+@media (min-width: 768px) {  /* Linea 684: inicia una regla responsive para aplicar estilos segun la condicion 'min-width: 768px'. */
+    .two-column {  /* Linea 685: abre el bloque de estilos del selector '.two-column'. */
+        grid-template-columns: 1fr 1fr;  /* Linea 686: asigna la propiedad 'grid-template-columns' con el valor '1fr 1fr' en el estilo actual. */
+        gap: 4rem;  /* Linea 687: asigna la propiedad 'gap' con el valor '4rem' en el estilo actual. */
+    }  /* Linea 688: cierra el bloque de reglas CSS actual. */
+/* Linea 689: separador visual para ordenar secciones de estilos. */
+    
+    .column-content h2 {  /* Linea 690: abre el bloque de estilos del selector '.column-content h2'. */
+        font-size: 2.5rem;  /* Linea 691: asigna la propiedad 'font-size' con el valor '2.5rem' en el estilo actual. */
+    }  /* Linea 692: cierra el bloque de reglas CSS actual. */
+/* Linea 693: separador visual para ordenar secciones de estilos. */
+    
+    .column-image {  /* Linea 694: abre el bloque de estilos del selector '.column-image'. */
+        height: 31.25rem;  /* Linea 695: asigna la propiedad 'height' con el valor '31.25rem' en el estilo actual. */
+    }  /* Linea 696: cierra el bloque de reglas CSS actual. */
+/* Linea 697: separador visual para ordenar secciones de estilos. */
+    
+    .two-column.reverse .column-content {  /* Linea 698: abre el bloque de estilos del selector '.two-column.reverse .column-content'. */
+        order: 1;  /* Linea 699: asigna la propiedad 'order' con el valor '1' en el estilo actual. */
+    }  /* Linea 700: cierra el bloque de reglas CSS actual. */
+/* Linea 701: separador visual para ordenar secciones de estilos. */
+    
+    .two-column.reverse .column-image {  /* Linea 702: abre el bloque de estilos del selector '.two-column.reverse .column-image'. */
+        order: 2;  /* Linea 703: asigna la propiedad 'order' con el valor '2' en el estilo actual. */
+    }  /* Linea 704: cierra el bloque de reglas CSS actual. */
+}  /* Linea 705: cierra el bloque de reglas CSS actual. */
+/* Linea 706: separador visual para ordenar secciones de estilos. */
+
+@media (min-width: 1024px) {  /* Linea 707: inicia una regla responsive para aplicar estilos segun la condicion 'min-width: 1024px'. */
+    .restaurant,  /* Linea 708: define o ajusta una regla de estilo para controlar la presentacion visual. */
+    .gym {  /* Linea 709: abre el bloque de estilos del selector '.gym'. */
+        padding: 8rem 0;  /* Linea 710: asigna la propiedad 'padding' con el valor '8rem 0' en el estilo actual. */
+    }  /* Linea 711: cierra el bloque de reglas CSS actual. */
+/* Linea 712: separador visual para ordenar secciones de estilos. */
+    
+    .column-content h2 {  /* Linea 713: abre el bloque de estilos del selector '.column-content h2'. */
+        font-size: 3rem;  /* Linea 714: asigna la propiedad 'font-size' con el valor '3rem' en el estilo actual. */
+    }  /* Linea 715: cierra el bloque de reglas CSS actual. */
+}  /* Linea 716: cierra el bloque de reglas CSS actual. */
+/* Linea 717: separador visual para ordenar secciones de estilos. */
+
+/* Linea 718: comentario CSS que describe la seccion de estilos. */
+/* ============================================
+   RESERVATION SECTION  /* Linea 719: define o ajusta una regla de estilo para controlar la presentacion visual. */
+ /*  ============================================ */  /* Linea 720: define o ajusta una regla de estilo para controlar la presentacion visual. */
+/* Linea 721: separador visual para ordenar secciones de estilos. */
+
+.reservation {  /* Linea 722: abre el bloque de estilos del selector '.reservation'. */
+    padding: 5rem 0;  /* Linea 723: asigna la propiedad 'padding' con el valor '5rem 0' en el estilo actual. */
+    background-color: var(--hotel-gray);  /* Linea 724: asigna la propiedad 'background-color' con el valor 'var(--hotel-gray)' en el estilo actual. */
+}  /* Linea 725: cierra el bloque de reglas CSS actual. */
+/* Linea 726: separador visual para ordenar secciones de estilos. */
+
+.reservation-card {  /* Linea 727: abre el bloque de estilos del selector '.reservation-card'. */
+    background-color: var(--hotel-white);  /* Linea 728: asigna la propiedad 'background-color' con el valor 'var(--hotel-white)' en el estilo actual. */
+    border-radius: 1rem;  /* Linea 729: asigna la propiedad 'border-radius' con el valor '1rem' en el estilo actual. */
+    padding: 2rem;  /* Linea 730: asigna la propiedad 'padding' con el valor '2rem' en el estilo actual. */
+    box-shadow: 0 8px 40px rgba(0, 0, 0, 0.15);  /* Linea 731: asigna la propiedad 'box-shadow' con el valor '0 8px 40px rgba(0, 0, 0, 0.15)' en el estilo actual. */
+}  /* Linea 732: cierra el bloque de reglas CSS actual. */
+/* Linea 733: separador visual para ordenar secciones de estilos. */
+
+.form-group {  /* Linea 734: abre el bloque de estilos del selector '.form-group'. */
+    margin-bottom: 1.5rem;  /* Linea 735: asigna la propiedad 'margin-bottom' con el valor '1.5rem' en el estilo actual. */
+}  /* Linea 736: cierra el bloque de reglas CSS actual. */
+/* Linea 737: separador visual para ordenar secciones de estilos. */
+
+.form-group label {  /* Linea 738: abre el bloque de estilos del selector '.form-group label'. */
+    display: block;  /* Linea 739: asigna la propiedad 'display' con el valor 'block' en el estilo actual. */
+    margin-bottom: 0.5rem;  /* Linea 740: asigna la propiedad 'margin-bottom' con el valor '0.5rem' en el estilo actual. */
+    font-weight: 500;  /* Linea 741: asigna la propiedad 'font-weight' con el valor '500' en el estilo actual. */
+}  /* Linea 742: cierra el bloque de reglas CSS actual. */
+/* Linea 743: separador visual para ordenar secciones de estilos. */
+
+.form-group input,  /* Linea 744: define o ajusta una regla de estilo para controlar la presentacion visual. */
+.form-group select {  /* Linea 745: abre el bloque de estilos del selector '.form-group select'. */
+    width: 100%;  /* Linea 746: asigna la propiedad 'width' con el valor '100%' en el estilo actual. */
+    padding: 0.875rem 1rem;  /* Linea 747: asigna la propiedad 'padding' con el valor '0.875rem 1rem' en el estilo actual. */
+    border: 1px solid #E5E7EB;  /* Linea 748: asigna la propiedad 'border' con el valor '1px solid #E5E7EB' en el estilo actual. */
+    border-radius: 0.5rem;  /* Linea 749: asigna la propiedad 'border-radius' con el valor '0.5rem' en el estilo actual. */
+    font-family: var(--font-body);  /* Linea 750: asigna la propiedad 'font-family' con el valor 'var(--font-body)' en el estilo actual. */
+    font-size: 1rem;  /* Linea 751: asigna la propiedad 'font-size' con el valor '1rem' en el estilo actual. */
+    transition: all 0.3s ease;  /* Linea 752: asigna la propiedad 'transition' con el valor 'all 0.3s ease' en el estilo actual. */
+}  /* Linea 753: cierra el bloque de reglas CSS actual. */
+/* Linea 754: separador visual para ordenar secciones de estilos. */
+
+.form-group input:focus,  /* Linea 755: define o ajusta una regla de estilo para controlar la presentacion visual. */
+.form-group select:focus {  /* Linea 756: abre el bloque de estilos del selector '.form-group select:focus'. */
+    outline: none;  /* Linea 757: asigna la propiedad 'outline' con el valor 'none' en el estilo actual. */
+    border-color: var(--hotel-gold);  /* Linea 758: asigna la propiedad 'border-color' con el valor 'var(--hotel-gold)' en el estilo actual. */
+    box-shadow: 0 0 0 3px rgba(198, 167, 94, 0.1);  /* Linea 759: asigna la propiedad 'box-shadow' con el valor '0 0 0 3px rgba(198, 167, 94, 0.1)' en el estilo actual. */
+}  /* Linea 760: cierra el bloque de reglas CSS actual. */
+/* Linea 761: separador visual para ordenar secciones de estilos. */
+
+.form-row {  /* Linea 762: abre el bloque de estilos del selector '.form-row'. */
+    display: grid;  /* Linea 763: asigna la propiedad 'display' con el valor 'grid' en el estilo actual. */
+    gap: 1.5rem;  /* Linea 764: asigna la propiedad 'gap' con el valor '1.5rem' en el estilo actual. */
+}  /* Linea 765: cierra el bloque de reglas CSS actual. */
+/* Linea 766: separador visual para ordenar secciones de estilos. */
+
+.btn-submit {  /* Linea 767: abre el bloque de estilos del selector '.btn-submit'. */
+    width: 100%;  /* Linea 768: asigna la propiedad 'width' con el valor '100%' en el estilo actual. */
+    padding: 1rem;  /* Linea 769: asigna la propiedad 'padding' con el valor '1rem' en el estilo actual. */
+    margin-top: 0.5rem;  /* Linea 770: asigna la propiedad 'margin-top' con el valor '0.5rem' en el estilo actual. */
+}  /* Linea 771: cierra el bloque de reglas CSS actual. */
+/* Linea 772: separador visual para ordenar secciones de estilos. */
+
+.trust-message {  /* Linea 773: abre el bloque de estilos del selector '.trust-message'. */
+    text-align: center;  /* Linea 774: asigna la propiedad 'text-align' con el valor 'center' en el estilo actual. */
+    font-size: 0.875rem;  /* Linea 775: asigna la propiedad 'font-size' con el valor '0.875rem' en el estilo actual. */
+    color: rgba(17, 17, 17, 0.6);  /* Linea 776: asigna la propiedad 'color' con el valor 'rgba(17, 17, 17, 0.6)' en el estilo actual. */
+    margin-top: 1.5rem;  /* Linea 777: asigna la propiedad 'margin-top' con el valor '1.5rem' en el estilo actual. */
+}  /* Linea 778: cierra el bloque de reglas CSS actual. */
+/* Linea 779: separador visual para ordenar secciones de estilos. */
+
+@media (min-width: 640px) {  /* Linea 780: inicia una regla responsive para aplicar estilos segun la condicion 'min-width: 640px'. */
+    .form-row {  /* Linea 781: abre el bloque de estilos del selector '.form-row'. */
+        grid-template-columns: 1fr 1fr;  /* Linea 782: asigna la propiedad 'grid-template-columns' con el valor '1fr 1fr' en el estilo actual. */
+    }  /* Linea 783: cierra el bloque de reglas CSS actual. */
+}  /* Linea 784: cierra el bloque de reglas CSS actual. */
+/* Linea 785: separador visual para ordenar secciones de estilos. */
+
+@media (min-width: 768px) {  /* Linea 786: inicia una regla responsive para aplicar estilos segun la condicion 'min-width: 768px'. */
+    .reservation-card {  /* Linea 787: abre el bloque de estilos del selector '.reservation-card'. */
+        padding: 3rem;  /* Linea 788: asigna la propiedad 'padding' con el valor '3rem' en el estilo actual. */
+    }  /* Linea 789: cierra el bloque de reglas CSS actual. */
+}  /* Linea 790: cierra el bloque de reglas CSS actual. */
+/* Linea 791: separador visual para ordenar secciones de estilos. */
+
+@media (min-width: 1024px) {  /* Linea 792: inicia una regla responsive para aplicar estilos segun la condicion 'min-width: 1024px'. */
+    .reservation {  /* Linea 793: abre el bloque de estilos del selector '.reservation'. */
+        padding: 8rem 0;  /* Linea 794: asigna la propiedad 'padding' con el valor '8rem 0' en el estilo actual. */
+    }  /* Linea 795: cierra el bloque de reglas CSS actual. */
+}  /* Linea 796: cierra el bloque de reglas CSS actual. */
+/* Linea 797: separador visual para ordenar secciones de estilos. */
+
+/* Linea 798: comentario CSS que describe la seccion de estilos. */
+/* ============================================
+   FOOTER  /* Linea 799: define o ajusta una regla de estilo para controlar la presentacion visual. */
+  /* ============================================ */  /* Linea 800: define o ajusta una regla de estilo para controlar la presentacion visual. */
+/* Linea 801: separador visual para ordenar secciones de estilos. */
+
+.footer {  /* Linea 802: abre el bloque de estilos del selector '.footer'. */
+    background-color: var(--hotel-black);  /* Linea 803: asigna la propiedad 'background-color' con el valor 'var(--hotel-black)' en el estilo actual. */
+    color: var(--hotel-white);  /* Linea 804: asigna la propiedad 'color' con el valor 'var(--hotel-white)' en el estilo actual. */
+    padding: 4rem 0;  /* Linea 805: asigna la propiedad 'padding' con el valor '4rem 0' en el estilo actual. */
+}  /* Linea 806: cierra el bloque de reglas CSS actual. */
+/* Linea 807: separador visual para ordenar secciones de estilos. */
+
+.footer-grid {  /* Linea 808: abre el bloque de estilos del selector '.footer-grid'. */
+    display: grid;  /* Linea 809: asigna la propiedad 'display' con el valor 'grid' en el estilo actual. */
+    gap: 2rem;  /* Linea 810: asigna la propiedad 'gap' con el valor '2rem' en el estilo actual. */
+    margin-bottom: 3rem;  /* Linea 811: asigna la propiedad 'margin-bottom' con el valor '3rem' en el estilo actual. */
+}  /* Linea 812: cierra el bloque de reglas CSS actual. */
+/* Linea 813: separador visual para ordenar secciones de estilos. */
+
+.footer-logo {  /* Linea 814: abre el bloque de estilos del selector '.footer-logo'. */
+    font-family: var(--font-heading);  /* Linea 815: asigna la propiedad 'font-family' con el valor 'var(--font-heading)' en el estilo actual. */
+    font-size: 1.5rem;  /* Linea 816: asigna la propiedad 'font-size' con el valor '1.5rem' en el estilo actual. */
+    margin-bottom: 1rem;  /* Linea 817: asigna la propiedad 'margin-bottom' con el valor '1rem' en el estilo actual. */
+}  /* Linea 818: cierra el bloque de reglas CSS actual. */
+/* Linea 819: separador visual para ordenar secciones de estilos. */
+
+.footer-column p {  /* Linea 820: abre el bloque de estilos del selector '.footer-column p'. */
+    font-size: 0.875rem;  /* Linea 821: asigna la propiedad 'font-size' con el valor '0.875rem' en el estilo actual. */
+    color: rgba(255, 255, 255, 0.7);  /* Linea 822: asigna la propiedad 'color' con el valor 'rgba(255, 255, 255, 0.7)' en el estilo actual. */
+    line-height: 1.6;  /* Linea 823: asigna la propiedad 'line-height' con el valor '1.6' en el estilo actual. */
+}  /* Linea 824: cierra el bloque de reglas CSS actual. */
+/* Linea 825: separador visual para ordenar secciones de estilos. */
+
+.footer-column h4 {  /* Linea 826: abre el bloque de estilos del selector '.footer-column h4'. */
+    font-size: 1rem;  /* Linea 827: asigna la propiedad 'font-size' con el valor '1rem' en el estilo actual. */
+    margin-bottom: 1rem;  /* Linea 828: asigna la propiedad 'margin-bottom' con el valor '1rem' en el estilo actual. */
+}  /* Linea 829: cierra el bloque de reglas CSS actual. */
+/* Linea 830: separador visual para ordenar secciones de estilos. */
+
+.contact-info p {  /* Linea 831: abre el bloque de estilos del selector '.contact-info p'. */
+    margin-bottom: 0.75rem;  /* Linea 832: asigna la propiedad 'margin-bottom' con el valor '0.75rem' en el estilo actual. */
+}  /* Linea 833: cierra el bloque de reglas CSS actual. */
+/* Linea 834: separador visual para ordenar secciones de estilos. */
+
+.contact-info a:hover {  /* Linea 835: abre el bloque de estilos del selector '.contact-info a:hover'. */
+    color: var(--hotel-gold);  /* Linea 836: asigna la propiedad 'color' con el valor 'var(--hotel-gold)' en el estilo actual. */
+}  /* Linea 837: cierra el bloque de reglas CSS actual. */
+/* Linea 838: separador visual para ordenar secciones de estilos. */
+
+.footer-links {  /* Linea 839: abre el bloque de estilos del selector '.footer-links'. */
+    display: flex;  /* Linea 840: asigna la propiedad 'display' con el valor 'flex' en el estilo actual. */
+    flex-direction: column;  /* Linea 841: asigna la propiedad 'flex-direction' con el valor 'column' en el estilo actual. */
+    gap: 0.5rem;  /* Linea 842: asigna la propiedad 'gap' con el valor '0.5rem' en el estilo actual. */
+}  /* Linea 843: cierra el bloque de reglas CSS actual. */
+/* Linea 844: separador visual para ordenar secciones de estilos. */
+
+.footer-links a {  /* Linea 845: abre el bloque de estilos del selector '.footer-links a'. */
+    font-size: 0.875rem;  /* Linea 846: asigna la propiedad 'font-size' con el valor '0.875rem' en el estilo actual. */
+    color: rgba(255, 255, 255, 0.7);  /* Linea 847: asigna la propiedad 'color' con el valor 'rgba(255, 255, 255, 0.7)' en el estilo actual. */
+    transition: color 0.3s ease;  /* Linea 848: asigna la propiedad 'transition' con el valor 'color 0.3s ease' en el estilo actual. */
+}  /* Linea 849: cierra el bloque de reglas CSS actual. */
+/* Linea 850: separador visual para ordenar secciones de estilos. */
+
+.footer-links a:hover {  /* Linea 851: abre el bloque de estilos del selector '.footer-links a:hover'. */
+    color: var(--hotel-gold);  /* Linea 852: asigna la propiedad 'color' con el valor 'var(--hotel-gold)' en el estilo actual. */
+}  /* Linea 853: cierra el bloque de reglas CSS actual. */
+/* Linea 854: separador visual para ordenar secciones de estilos. */
+
+.social-links {  /* Linea 855: abre el bloque de estilos del selector '.social-links'. */
+    display: flex;  /* Linea 856: asigna la propiedad 'display' con el valor 'flex' en el estilo actual. */
+    gap: 1rem;  /* Linea 857: asigna la propiedad 'gap' con el valor '1rem' en el estilo actual. */
+}  /* Linea 858: cierra el bloque de reglas CSS actual. */
+/* Linea 859: separador visual para ordenar secciones de estilos. */
+
+.social-links a {  /* Linea 860: abre el bloque de estilos del selector '.social-links a'. */
+    width: 2.5rem;  /* Linea 861: asigna la propiedad 'width' con el valor '2.5rem' en el estilo actual. */
+    height: 2.5rem;  /* Linea 862: asigna la propiedad 'height' con el valor '2.5rem' en el estilo actual. */
+    background-color: rgba(255, 255, 255, 0.1);  /* Linea 863: asigna la propiedad 'background-color' con el valor 'rgba(255, 255, 255, 0.1)' en el estilo actual. */
+    border-radius: 50%;  /* Linea 864: asigna la propiedad 'border-radius' con el valor '50%' en el estilo actual. */
+    display: flex;  /* Linea 865: asigna la propiedad 'display' con el valor 'flex' en el estilo actual. */
+    align-items: center;  /* Linea 866: asigna la propiedad 'align-items' con el valor 'center' en el estilo actual. */
+    justify-content: center;  /* Linea 867: asigna la propiedad 'justify-content' con el valor 'center' en el estilo actual. */
+    transition: all 0.3s ease;  /* Linea 868: asigna la propiedad 'transition' con el valor 'all 0.3s ease' en el estilo actual. */
+}  /* Linea 869: cierra el bloque de reglas CSS actual. */
+/* Linea 870: separador visual para ordenar secciones de estilos. */
+
+.social-links a:hover {  /* Linea 871: abre el bloque de estilos del selector '.social-links a:hover'. */
+    background-color: var(--hotel-gold);  /* Linea 872: asigna la propiedad 'background-color' con el valor 'var(--hotel-gold)' en el estilo actual. */
+}  /* Linea 873: cierra el bloque de reglas CSS actual. */
+/* Linea 874: separador visual para ordenar secciones de estilos. */
+
+.footer-bottom {  /* Linea 875: abre el bloque de estilos del selector '.footer-bottom'. */
+    border-top: 1px solid rgba(255, 255, 255, 0.1);  /* Linea 876: asigna la propiedad 'border-top' con el valor '1px solid rgba(255, 255, 255, 0.1)' en el estilo actual. */
+    padding-top: 2rem;  /* Linea 877: asigna la propiedad 'padding-top' con el valor '2rem' en el estilo actual. */
+    display: flex;  /* Linea 878: asigna la propiedad 'display' con el valor 'flex' en el estilo actual. */
+    flex-direction: column;  /* Linea 879: asigna la propiedad 'flex-direction' con el valor 'column' en el estilo actual. */
+    align-items: center;  /* Linea 880: asigna la propiedad 'align-items' con el valor 'center' en el estilo actual. */
+    gap: 1rem;  /* Linea 881: asigna la propiedad 'gap' con el valor '1rem' en el estilo actual. */
+}  /* Linea 882: cierra el bloque de reglas CSS actual. */
+/* Linea 883: separador visual para ordenar secciones de estilos. */
+
+.footer-bottom p {  /* Linea 884: abre el bloque de estilos del selector '.footer-bottom p'. */
+    font-size: 0.875rem;  /* Linea 885: asigna la propiedad 'font-size' con el valor '0.875rem' en el estilo actual. */
+    color: rgba(255, 255, 255, 0.5);  /* Linea 886: asigna la propiedad 'color' con el valor 'rgba(255, 255, 255, 0.5)' en el estilo actual. */
+}  /* Linea 887: cierra el bloque de reglas CSS actual. */
+/* Linea 888: separador visual para ordenar secciones de estilos. */
+
+.footer-legal {  /* Linea 889: abre el bloque de estilos del selector '.footer-legal'. */
+    display: flex;  /* Linea 890: asigna la propiedad 'display' con el valor 'flex' en el estilo actual. */
+    gap: 1.5rem;  /* Linea 891: asigna la propiedad 'gap' con el valor '1.5rem' en el estilo actual. */
+}  /* Linea 892: cierra el bloque de reglas CSS actual. */
+/* Linea 893: separador visual para ordenar secciones de estilos. */
+
+.footer-legal a {  /* Linea 894: abre el bloque de estilos del selector '.footer-legal a'. */
+    font-size: 0.875rem;  /* Linea 895: asigna la propiedad 'font-size' con el valor '0.875rem' en el estilo actual. */
+    color: rgba(255, 255, 255, 0.5);  /* Linea 896: asigna la propiedad 'color' con el valor 'rgba(255, 255, 255, 0.5)' en el estilo actual. */
+    transition: color 0.3s ease;  /* Linea 897: asigna la propiedad 'transition' con el valor 'color 0.3s ease' en el estilo actual. */
+}  /* Linea 898: cierra el bloque de reglas CSS actual. */
+/* Linea 899: separador visual para ordenar secciones de estilos. */
+
+.footer-legal a:hover {  /* Linea 900: abre el bloque de estilos del selector '.footer-legal a:hover'. */
+    color: var(--hotel-gold);  /* Linea 901: asigna la propiedad 'color' con el valor 'var(--hotel-gold)' en el estilo actual. */
+}  /* Linea 902: cierra el bloque de reglas CSS actual. */
+/* Linea 903: separador visual para ordenar secciones de estilos. */
+
+@media (min-width: 768px) {  /* Linea 904: inicia una regla responsive para aplicar estilos segun la condicion 'min-width: 768px'. */
+    .footer-grid {  /* Linea 905: abre el bloque de estilos del selector '.footer-grid'. */
+        grid-template-columns: repeat(2, 1fr);  /* Linea 906: asigna la propiedad 'grid-template-columns' con el valor 'repeat(2, 1fr)' en el estilo actual. */
+    }  /* Linea 907: cierra el bloque de reglas CSS actual. */
+/* Linea 908: separador visual para ordenar secciones de estilos. */
+    
+    .footer-bottom {  /* Linea 909: abre el bloque de estilos del selector '.footer-bottom'. */
+        flex-direction: row;  /* Linea 910: asigna la propiedad 'flex-direction' con el valor 'row' en el estilo actual. */
+        justify-content: space-between;  /* Linea 911: asigna la propiedad 'justify-content' con el valor 'space-between' en el estilo actual. */
+    }  /* Linea 912: cierra el bloque de reglas CSS actual. */
+}  /* Linea 913: cierra el bloque de reglas CSS actual. */
+/* Linea 914: separador visual para ordenar secciones de estilos. */
+
+@media (min-width: 1024px) {  /* Linea 915: inicia una regla responsive para aplicar estilos segun la condicion 'min-width: 1024px'. */
+    .footer-grid {  /* Linea 916: abre el bloque de estilos del selector '.footer-grid'. */
+        grid-template-columns: repeat(4, 1fr);  /* Linea 917: asigna la propiedad 'grid-template-columns' con el valor 'repeat(4, 1fr)' en el estilo actual. */
+    }  /* Linea 918: cierra el bloque de reglas CSS actual. */
+}  /* Linea 919: cierra el bloque de reglas CSS actual. */
